@@ -89,7 +89,7 @@ button.modal_btn:hover {
 }
 
 #myBtn {
-  display: block;
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
