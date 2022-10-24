@@ -71,17 +71,20 @@ $(function () {
 
   /* 제이쿼리 애니메이트 함수 사용 - 콜백함수 사용함 */
 
-  var tt = 400;
-
-  $('.contents section.con1').animate({ opacity: 1, top: 0 }, tt, function () {
-    $('.contents section.con2').animate({ opacity: 1, top: 0 }, tt, function () {
-      $('.contents section.con3').animate({ opacity: 1, top: 0 }, tt, function () {
-        $('footer').animate({ opacity: 1 }, tt)
+  /*   var tt = 400;
+  
+    $('.contents section.con1').animate({ opacity: 1, top: 0 }, tt, function () {
+      $('.contents section.con2').animate({ opacity: 1, top: 0 }, tt, function () {
+        $('.contents section.con3').animate({ opacity: 1, top: 0 }, tt, function () {
+          $('footer').animate({ opacity: 1 }, tt)
+        })
       })
-    })
-  })
+    }) */
 
 
+  /* aos 플러그인 사용 설정함  */
+
+  AOS.init();
 
 
 
