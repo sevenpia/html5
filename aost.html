@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aos test</title>
+  <link rel="stylesheet" href="css/aost.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/aost.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <div class="vh">
+      scroll 해보세요 (100 vh)
+    </div>
+
+    <p data-aos="zoom-in"> aos 플러그인을 사용하여 내용물이 순차적으로 나오도록 하였다 </p>
+
+    <div class="box" data-aos="zoom-in" data-aos-delay="200">
+      1번 박스 여기에는 내용이 나온다. (data-aos="zoom-in")
+    </div>
+
+
+    <div class="box" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200">
+      2번 박스여기에는 내용이 나온다. (data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200")
+    </div>
+
+    <div class="box" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-delay="400">
+      3번 박스 여기에는 내용이 나온다. (data-aos="zoom-in-up" data-aos-easing="ease" data-aos-delay="400")
+    </div>
+
+    <div class="box" data-aos="flip-right" data-aos-easing="ease" data-aos-delay="800">
+      4번 박스 여기에는 내용이 나온다.(data-aos="flip-right" data-aos-easing="ease" data-aos-delay="800")
+    </div>
+
+    <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+      5번 박스 여기에는 내용이 나온다. (data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine")
+    </div>
+
+
+    <div class="box" data-aos="zoom-in-up">
+      6번 박스 여기에는 내용이 나온다. (data-aos="zoom-in-up")
+    </div>
+
+
+
+    <div class="box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+      7번 박스 여기에는 내용이 나온다. (data-aos="fade-up" data-aos-anchor-placement="bottom-bottom")
+    </div>
+
+
+
+    <div class="box" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      8번 박스 여기에는 내용이 나온다. (data-aos="fade-up" data-aos-anchor-placement="top-center")
+    </div>
+
+
+
+
+
+
+
+
+  </div> <!-- container end  -->
+
+
+</body>
+
+</html>
