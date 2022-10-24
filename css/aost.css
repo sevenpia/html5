@@ -24,9 +24,8 @@ a {
 }
 
 .vh {
-  /*    height: 100vh; */
-  height: 600px;
-  background: eee;
+  height: 100vh;
+  background: #eee;
 }
 
 p {
@@ -42,4 +41,21 @@ p {
   height: 250px;
   background: #aaa;
   margin-top: 100px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff55cc;
+  padding: 20px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#myBtn:hover {
+  opacity: 0.8;
 }
