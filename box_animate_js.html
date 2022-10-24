@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0px;
+      }
+      .jb {
+        height: 200px;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+        opacity: 0;
+      }
+      .jb-1 {
+        background-color: #333333;
+      }
+      .jb-2 {
+        background-color: #444444;
+      }
+      .jb-3 {
+        background-color: #222222;
+      }
+    </style>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var jbTime = 600;
+        $(".jb-1").animate(
+          {
+            opacity: "1",
+          },
+          jbTime,
+          function () {
+            $(".jb-2").animate(
+              {
+                opacity: "1",
+              },
+              jbTime,
+              function () {
+                $(".jb-3").animate(
+                  {
+                    opacity: "1",
+                  },
+                  jbTime
+                );
+              }
+            );
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div class="jb jb-1">Hello!</div>
+    <div class="jb jb-2">Hello!</div>
+    <div class="jb jb-3">Hello!</div>
+  </body>
+</html>
