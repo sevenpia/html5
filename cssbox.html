@@ -7,6 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>box model</title>
   <style>
+    body {
+      font-family: "맑은 고딕", MalgunGothic, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+
+    ul {
+      width: 800px;
+      margin: 30px auto;
+    }
+
+
+
     .box1 {
       width: 200px;
       height: 100px;
@@ -17,16 +31,14 @@
       /* border-style: solid;
       border-width: 10px;
       border-color: #ccc; */
-
       /* border: solid 10px #ccc; */
       /* border: 10px solid #ccc; */
       border-style: solid;
       border-color: #00f;
       border-width: 10px 20px 30px;
-      /*           top  left/right  bottom */
-
+      /* top  left/right  bottom */
+      margin: 30px auto;
     }
-
 
     .box2 {
       box-sizing: border-box;
@@ -34,17 +46,35 @@
       height: 100px;
       padding: 20px;
       /* border: 10px solid #00f; */
-
       border-width: 10px;
       border-style: solid;
       border-color: #0f0;
+      margin: 30px auto;
 
+    }
+
+    .under1 {
+      text-decoration: underline;
+      color: #f00;
+    }
+
+    .under2 span {
+      border-bottom: 5px solid #f47906;
+      border-width: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
     }
   </style>
 </head>
 
 <body>
-  <!--주석처리   -->
+  <!-- 주석처리 -->
+  <ul>
+    <li>border(테두리)는 한줄로 표시할 수 있다. border: 10px solid #ccc;</li>
+    <li>border 의 종류 : border-style: solid;</li>
+    <li class="under1">border 의 굵기 : border-width: 10px;</li>
+    <li class="under2"> <span>border 의 컬러 : border-color: #ccc; </span></li>
+  </ul>
 
   <div class="box1"> aaaaaaaaaaaaaaaaaa </div>
   <div class="box2"> </div>
