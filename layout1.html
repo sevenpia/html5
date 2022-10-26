@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout1</title>
+  <style>
+    body {
+      /* background-image: url('images/banner.jpg');
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-attachment: fixed; */
+    }
+
+    #container {
+      width: 1200px;
+      height: 1500px;
+      background: #e9e9e9;
+      margin: 20px auto;
+      box-sizing: border-box;
+    }
+
+    header {
+      width: 100%;
+      height: 120px;
+      background: #a6a6a6;
+
+    }
+
+    #left-sidebar {
+      float: left;
+      background: #e1e1e1;
+      width: 250px;
+      height: 600px;
+
+    }
+
+    #right-sidebar {
+      float: left;
+      background: #e1e1e1;
+      width: 150px;
+      height: 600px;
+      z-index: -10;
+    }
+
+    .banner {
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      right: 30px;
+      bottom: 50px;
+      border: 1px solid #f00;
+      background: url(images/banner.jpg) no-repeat left top;
+      background-size: cover;
+    }
+
+    section#contents {
+      background: #787878;
+      width: 800px;
+      height: 600px;
+      float: left;
+    }
+
+
+    footer {
+      clear: both;
+      background: #a5a5a5;
+      width: 100%;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <header>헤더</header>
+    <aside id="left-sidebar">왼쪽</aside>
+    <section id="contents">내용</section>
+    <aside id="right-sidebar">오른쪽
+    </aside>
+    <footer>하단</footer>
+    <div class="banner">배너광고 </div>
+  </div>
+</body>
+
+</html>

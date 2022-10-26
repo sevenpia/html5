@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>선택자</title>
+
+  <style>
+    div.a p {
+      background: #aaa;
+      color: #fff;
+    }
+
+    div.a>p {
+      background: #1a52b9;
+      color: #ff0;
+    }
+
+    div.a>p:first-child {
+      color: #f00;
+    }
+
+    h1~p {
+      background: #f00;
+    }
+
+    h1+p {
+      background: #0f0;
+    }
+
+    .f33 {
+      font-size: 33px;
+    }
+  </style>
+</head>
+
+<body>
+  <pre class="f33">
+  ★div.a  p  
+    a 아래의 모든 p 를 말한다. 
+    (자식 및 손자 모두를 말한다. 여기서는 p 4개가 대상이다.  )
+
+  ★div.a > p 
+    a 바로 아래의 p 를 말한다.  
+    (자식을 말한다. 여기서는 바로 아래있는 p 2개가 대상이다. )
+  </pre>
+
+  <div class="a">
+    <p>안녕하세요 </p>
+    <p>즐거운 하루되세요 </p>
+
+    <div>
+      <p>매일매일</p>
+      <p>하루하루</p>
+    </div>
+  </div> <!-- a end  -->
+
+
+  <pre class="f33">
+    ★ h1 ~ p 
+    h1 의 형제 p 전체(총 3개)를 말한다. 
+
+    ★ h1 + p 
+    h1 의 바로 아래있는 형제 p 1개를 말한다. 
+
+  </pre>
+
+  <h1>대제목입니다. </h1>
+  <p>aaa</p>
+  <p>bbb</p>
+  <p>ccc</p>
+
+</body>
+
+</html>

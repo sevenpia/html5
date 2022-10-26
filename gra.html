@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gradient</title>
+  <style>
+    div {
+      width: 400px;
+      height: 400px;
+      border: 1px solid #aaa;
+      border-radius: 30px;
+      margin: 30px auto;
+    }
+
+    .gra1 {
+      text-align: center;
+      line-height: 300px;
+      font-weight: bold;
+      font-size: 22px;
+      color: #666;
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), skyblue 60%, #1bc1eb 90%, #f171d6);
+    }
+
+    /* 타원형  */
+    .gra2 {
+      border-radius: 50%;
+      background: radial-gradient(ellipse at 30% 30%, white, yellow, red)
+    }
+
+    .gra3 {
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, white, yellow, orange, pink, red, rgb(216, 189, 33))
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gra1">여기는 핑크색입니다.</div>
+  <div class="gra2">여기는 핑크색입니다.</div>
+  <div class="gra3">여기는 핑크색입니다.</div>
+</body>
+
+</html>
