@@ -5,6 +5,9 @@
   padding: 0;
 }
 
+body {
+  font-size: 22px;
+}
 li {
   list-style: disc;
   padding-left: 2em;
