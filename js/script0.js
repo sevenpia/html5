@@ -1,8 +1,30 @@
-var ccc = document.querySelector(".ccc");
+var ccc = document.querySelectorAll(".ccc");
 console.log(ccc)
 
-ccc.addEventListener("click", function (ev) {
+/* ccc[0].addEventListener("click", function (ev) {
   ev.preventDefault()
   //  document.getElementsByClassName("ccc")[0].innerHTML = "준비중입니다. ";
   alert('준비중입니다')
 })
+
+ccc[1].addEventListener("click", function (ev) {
+  ev.preventDefault()
+  //  document.getElementsByClassName("ccc")[0].innerHTML = "준비중입니다. ";
+  alert('준비중입니다')
+}) */
+
+
+
+for (let i = 0; i < ccc.length; i++) {
+  ccc[i].addEventListener("click", function (ev) {
+    ev.preventDefault()
+    //  document.getElementsByClassName("ccc")[0].innerHTML = "준비중입니다. ";
+    alert('준비중입니다')
+  })
+}
+
+
+
+
+
+
