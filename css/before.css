@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "맑은 고딕", MaglgunGothic, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+section {
+  height: 100vh;
+  background: url(../images/net.jpg);
+}
+
+section::before {
+  content: "";
+  /* background: linear-gradient(to right, black, transparent); */
+  background-image: linear-gradient(to right, black, transparent);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 5em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.abc {
+  height: 100vh;
+  background: url(../images/roses.jpg);
+  position: relative;
+}
+
+.abc::before {
+  content: "";
+  /* background: linear-gradient(to right, black, transparent); */
+  background-image: linear-gradient(to right, black, transparent);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+
+.ww {
+  color: #fff;
+  font-size: 5em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
