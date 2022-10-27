@@ -1,4 +1,4 @@
-var ccc = document.querySelectorAll(".ccc");
+var ccc = document.querySelectorAll(".ccc a");
 console.log(ccc)
 
 /* ccc[0].addEventListener("click", function (ev) {
