@@ -6,11 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>선택자</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
+    body,
+    pre {
+      font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .wrap {
+      width: 1200px;
+      border: 3px solid #ccc;
+      margin: 30px auto;
+      padding: 30px;
+      padding-bottom: 200px;
+    }
+
     div.a p {
       background: #aaa;
       color: #fff;
+      padding: 0.8rem;
+
     }
 
     div.a>p {
@@ -23,21 +41,50 @@
     }
 
     h1~p {
-      background: #f00;
+      background: #ee6e06;
+      padding: 0.8rem;
+      color: #fff;
+      font-weight: bold;
+
     }
 
     h1+p {
-      background: #0f0;
+      background: #069eb9;
     }
 
     .f33 {
       font-size: 33px;
+      margin-top: 50px;
+    }
+
+
+    .mt200 {
+      font-size: 33px;
+      margin-top: 300px;
+    }
+
+    .round {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      background: #f00;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+    }
+
+    .bold {
+      font-weight: 500;
     }
   </style>
 </head>
 
 <body>
-  <pre class="f33">
+  <div class="wrap">
+    <pre class="f33">
+  <span class="round">1</span><span class="bold">  부모자식 계층구조 </span>
+
   ★div.a  p  
     a 아래의 모든 p 를 말한다. 
     (자식 및 손자 모두를 말한다. 여기서는 p 4개가 대상이다.  )
@@ -47,18 +94,20 @@
     (자식을 말한다. 여기서는 바로 아래있는 p 2개가 대상이다. )
   </pre>
 
-  <div class="a">
-    <p>안녕하세요 </p>
-    <p>즐거운 하루되세요 </p>
+    <div class="a">
+      <p>안녕하세요 </p>
+      <p>즐거운 하루되세요 </p>
 
-    <div>
-      <p>매일매일</p>
-      <p>하루하루</p>
-    </div>
-  </div> <!-- a end  -->
+      <div>
+        <p>매일매일</p>
+        <p>하루하루</p>
+      </div>
+    </div> <!-- a end  -->
 
 
-  <pre class="f33">
+    <pre class="mt200">
+  <span class="round">2</span><span class="bold">   형제 계층구조  </span>
+  
     ★ h1 ~ p 
     h1 의 형제 p 전체(총 3개)를 말한다. 
 
@@ -67,11 +116,12 @@
 
   </pre>
 
-  <h1>대제목입니다. </h1>
-  <p>aaa</p>
-  <p>bbb</p>
-  <p>ccc</p>
+    <h1>대제목입니다. </h1>
+    <p>aaa</p>
+    <p>bbb</p>
+    <p>ccc</p>
 
+  </div>
 </body>
 
 </html>
