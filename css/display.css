@@ -1,0 +1,91 @@
+body {
+  font-family: "맑은 고딕", MalgunGothic, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.wrap {
+  width: 1000px;
+  color: #333;
+  line-height: 2rem;
+  margin: 50px auto;
+}
+
+div {
+  line-height: 1em;
+}
+
+p.ccc {
+  padding: 1.2rem;
+  border: 10px solid #ccc;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  margin-bottom: 60px;
+}
+
+.box {
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+}
+
+.box1 {
+  width: 200px;
+  height: 80px;
+  background: rgba(255, 0, 0, 1);
+  margin: 30px;
+}
+
+.box2 {
+  width: 200px;
+  height: 80px;
+  background: rgba(6, 189, 113, 0.832);
+  margin: 30px;
+}
+
+.box3 {
+  width: 200px;
+  height: 80px;
+  background: rgb(131, 59, 247);
+  margin: 30px;
+}
+
+.box4 {
+  width: 200px;
+  height: 80px;
+  background: rgb(30, 98, 59);
+  margin: 30px;
+}
+
+/* 인라인 요소는 가로 세로 값을 가질 수없다. 
+    display : block 를 주어야 가로 세로값을 가질 수 있다.  */
+span.aaa {
+  display: inline;
+  background: #f00;
+  width: 300px;
+  height: 100px;
+  margin: 30px;
+  padding: 30px;
+}
+
+span.bbb {
+  display: inline-block;
+  background: rgba(89, 189, 8, 0.752);
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+
+p.mt60 {
+  margin-top: 60px;
+}
+p.mt90 {
+  margin-top: 90px;
+}
