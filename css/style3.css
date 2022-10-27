@@ -22,7 +22,8 @@ li {
 }
 
 body {
-  font-family: "맑은 고딕", malgunGohic, arial, sans-serif;
+  /* font-family: "맑은 고딕", malgunGohic, arial, sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 15px;
   color: #333;
 }
