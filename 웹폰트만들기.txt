@@ -1,0 +1,25 @@
+스타일시트 파일에서 
+
+1. 웹폰트 사용하겠다 : 
+@font-face 안의 font-family  의 이름은 임의로 정해주어도 된다. 
+
+========================================
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+2. 사용할 태그에 웹폰트의 이름을 넣어준다. 
+
+
+p{
+      font-family: 'NEXON Lv1 Gothic OTF', sans-serif;
+      font-size: 2em;
+      font-weight: 600;
+}
