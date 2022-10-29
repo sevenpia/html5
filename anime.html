@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>animation</title>
+  <script src="js/anime.js" defer></script>
 </head>
 
 <body>
@@ -35,7 +36,7 @@
 
     .wrap {
       position: relative;
-      background-color: #00f;
+      background-color: #aad;
       width: 100%;
       height: 100%;
     }
@@ -47,7 +48,7 @@
       background-color: #c88;
       border-radius: 50%;
       background: url(images/img1-800.jpg) left top;
-      top: 0px;
+      top: 100px;
       right: 100px;
 
       /*animation-name: anime;
@@ -58,27 +59,33 @@
       animation-fill-mode: forwards;
       animation-iteration-count: infinite;
  */
-      animation: anime 2s linear 1s alternate forwards infinite;
+      animation: anime 3s linear 1s alternate forwards infinite;
     }
 
     @keyframes anime {
       0% {
-        top: 0px;
+        top: 100px;
         right: 100px;
       }
 
+      50% {
+        top: 300px;
+        right: 900px;
+      }
+
       100% {
-        top: 0px;
-        right: 300px;
+        top: 200px;
+        right: 500px;
         background: url(images/img1-800.jpg) right bottom;
       }
+
     }
 
     .box2 {
       position: fixed;
       width: 200px;
       height: 100px;
-      background-color: #aa9;
+      background-color: #3cc;
       bottom: 30px;
       right: 30px;
       padding: 20px;
@@ -109,12 +116,11 @@
       position: relative;
       width: 300px;
       height: 200px;
-      background-color: #ab9;
+      background-color: #889;
       margin: 50px;
       animation: anime3 1s;
       animation-iteration-count: 2;
       animation-direction: normal;
-
     }
 
 
