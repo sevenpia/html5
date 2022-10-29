@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>원근법</title>
+</head>
+<style>
+  .wrap {
+    width: 750px;
+    border: 3px solid #ccc;
+    margin: 0 auto;
+    padding: 10px;
+
+  }
+
+  .origin {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 60px 40px;
+    perspective: 200px;
+
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    transition: all 0.3s;
+  }
+
+  .box1:hover {
+    transform: rotateX(55deg);
+  }
+
+  .box2:hover {
+    transform: rotateY(55deg);
+  }
+
+  .box3:hover {
+    transform: rotateZ(55deg);
+  }
+
+  .box4:hover {
+    transform: rotate3d(2.5, 1.2, -1.5, 55deg);
+  }
+</style>
+
+<body>
+
+  <div class="wrap">
+    <div class="tit">
+      rotate 변형함수
+    </div>
+    <div class="origin">
+      <div class="box box1"></div>
+    </div>
+    <div class="origin">
+      <div class="box box2"></div>
+    </div>
+    <div class="origin">
+      <div class="box box3"></div>
+    </div>
+    <div class="origin">
+      <div class="box box4"></div>
+    </div>
+
+    <div class="end"></div>
+
+    <style>
+      .end {
+        display: block;
+        border: 1px solid #a19;
+      }
+    </style>
+
+    <div class="tit">
+      rotate 변형함수
+    </div>
+
+
+    <div class="boxcover">
+      <div class="ac a1"></div>
+    </div>
+
+    <div class="boxcover">
+      <div class="ac a2"></div>
+    </div>
+    <div class="boxcover">
+      <div class="ac a3"></div>
+    </div>
+    <div class="boxcover">
+      <div class="ac a4"></div>
+    </div>
+
+
+    <style>
+      .boxcover {
+        border: 1px solid #00f;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 60px 40px;
+        perspective: 150px;
+      }
+
+      .ac {
+        width: 100px;
+        height: 100px;
+        background-color: #abc;
+        transition: all 0.3s;
+      }
+
+      .a1:hover {
+        transform: rotateX(55deg);
+      }
+
+      .a2:hover {
+        transform: rotateY(55deg);
+      }
+
+      .a3:hover {
+        transform: rotateZ(55deg);
+      }
+
+      .a4:hover {
+        transform: rotate3d(1.5, -2.5, -3.1, 55deg);
+      }
+    </style>
+
+
+    <style>
+      .b {
+        width: 100px;
+        height: 100px;
+        background: #bdf;
+        display: inline-block;
+        margin: 0 40px;
+        transition: all 0.3s;
+      }
+
+      .b1:hover {
+        transform: skewX(35deg);
+      }
+
+      .b2:hover {
+        transform: skewY(30deg);
+      }
+
+      .b3:hover {
+        transform: skew(-25deg, -15deg);
+      }
+
+      .tit {
+        width: 200px;
+        height: 50px;
+        background: #3ac;
+        transform: skewX(15deg);
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        margin: 30px auto;
+        font-size: 1.2em;
+
+      }
+    </style>
+    <div class="end"></div>
+
+    <div class="tit">
+      skew 변형함수
+    </div>
+    <div class="b b1"></div>
+    <div class="b b2"></div>
+    <div class="b b3"></div>
+
+
+  </div>
+
+</body>
+
+</html>
