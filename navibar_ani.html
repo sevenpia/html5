@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animated navigation bar </title>
+  <style>
+    :root {
+      --pink: #ff4081;
+    }
+
+    body {
+      background-color: #333;
+    }
+
+    #navbar {
+      width: 100vw;
+      background-color: #192425;
+
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 1em 0;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #fff;
+      padding-right: 3em;
+      position: relative;
+    }
+
+    li a::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 0%;
+      height: 0.4em;
+      display: block;
+      background-color: var(--pink);
+      bottom: -1em;
+      transition: all ease-in-out 250ms;
+    }
+
+    li a:hover::after {
+      width: 60%;
+    }
+
+    li a:hover {
+      color: var(--pink);
+    }
+
+    li:first-child {
+      margin-right: auto;
+      margin-left: 3em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a href="#">logo</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
