@@ -1,5 +1,6 @@
 
 let mainText = document.querySelector("h1");
+console.log(mainText);
 
 window.addEventListener('scroll', function () {
   let value = window.scrollY
