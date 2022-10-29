@@ -84,3 +84,17 @@ button.top {
   padding: 1rem;
   border-radius: 100px;
 } */
+
+.jst {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  width: 150px;
+  height: 80px;
+  border-radius: 30px;
+  border: 0;
+  color: #fff;
+  background-color: yellowgreen;
+  font-size: 1.3rem;
+  text-shadow: 2px 2px #fff;
+}
