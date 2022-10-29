@@ -14,43 +14,64 @@
 </head>
 
 <body>
-  <h1>오늘 학교에 갑니다. </h1>
-  <p class="nanum">dff Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed enim sapiente assumenda mollitia
-    provident, libero non
-    deleniti harum officiis, obcaecati eos maxime vero suscipit vitae illum exercitationem voluptatem odio. Sint.
-  </p>
-  <p class="nexon">dff Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed enim sapiente assumenda mollitia
-    provident, libero non
-    deleniti harum officiis, obcaecati eos maxime vero suscipit vitae illum exercitationem voluptatem odio. Sint.
-  </p>
-  <p class="nanum">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repellat explicabo, voluptas dolor id porro quam
-    eveniet itaque. Magnam eveniet odit nisi culpa, quibusdam expedita assumenda sit? Natus, impedit similique!
-  </p>
-  <p class="nexon">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto tempora ad, officia illo vel rerum maxime quia
-    quibusdam. Doloremque, eveniet! Necessitatibus aspernatur vel possimus deleniti. Ipsam unde consequatur error
-    sapiente! </p>
-  <p class="nanum">
-    Lorem exercitation exercitation esse cupidatat labore commodo dolor proident deserunt non est eu et in. Amet ex
-    aliqua mollit consequat est duis sunt enim esse laboris enim. Aliqua duis commodo in minim dolore eu in proident
-    dolore voluptate enim esse. Et culpa ad culpa deserunt id.</p>
+  <div class="wrap">
+    <div class="twrap">
+      <p class="tit"> 구글 폰트 : Nanum Brush Script, Nanum Gothic 사용</p>
+      <p class="tit"> 넥슨 폰트 : @font-face 사용법 (ex) Nexon 폰트</p>
+    </div>
+    <h1>오늘 학교에 갑니다. </h1>
+    <p class="nanum">dff Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed enim sapiente assumenda mollitia
+      provident, libero non
+      deleniti harum officiis, obcaecati eos maxime vero suscipit vitae illum exercitationem voluptatem odio. Sint.
+    </p>
+    <p class="nexon">dff Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed enim sapiente assumenda mollitia
+      provident, libero non
+      deleniti harum officiis, obcaecati eos maxime vero suscipit vitae illum exercitationem voluptatem odio. Sint.
+    </p>
+    <p class="nanum">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repellat explicabo, voluptas dolor id porro quam
+      eveniet itaque. Magnam eveniet odit nisi culpa, quibusdam expedita assumenda sit? Natus, impedit similique!
+    </p>
+    <p class="nexon">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto tempora ad, officia illo vel rerum maxime quia
+      quibusdam. Doloremque, eveniet! Necessitatibus aspernatur vel possimus deleniti. Ipsam unde consequatur error
+      sapiente! </p>
+    <p class="nanum">
+      Lorem exercitation exercitation esse cupidatat labore commodo dolor proident deserunt non est eu et in. Amet ex
+      aliqua mollit consequat est duis sunt enim esse laboris enim. Aliqua duis commodo in minim dolore eu in proident
+      dolore voluptate enim esse. Et culpa ad culpa deserunt id.</p>
 
-  <p class="nexon">
-    Culpa fugiat laboris duis qui aliqua quis occaecat tempor ad. Reprehenderit fugiat irure et aliqua officia eiusmod.
-    Consectetur quis magna voluptate qui ex incididunt labore reprehenderit voluptate fugiat non labore. Nisi in culpa
-    dolor elit cillum sit excepteur sint et irure qui.
-    Tempor nulla ipsum nisi Lorem pariatur Lorem.
-  </p>
+    <p class="nexon">
+      Culpa fugiat laboris duis qui aliqua quis occaecat tempor ad. Reprehenderit fugiat irure et aliqua officia
+      eiusmod.
+      Consectetur quis magna voluptate qui ex incididunt labore reprehenderit voluptate fugiat non labore. Nisi in culpa
+      dolor elit cillum sit excepteur sint et irure qui.
+      Tempor nulla ipsum nisi Lorem pariatur Lorem.
+    </p>
 
-
+  </div>
 
   <style>
+    .wrap {
+      width: 1200px;
+      margin: 50px auto;
+    }
+
+    .twrap {
+      font-family: 'nexon', sans-serif;
+      font-size: 2em;
+      font-weight: 600;
+      border: 3px solid #ccc;
+      padding: 10px;
+      color: coral;
+    }
+
+
+
+
     /* 
     font-family: 'Nanum Brush Script', cursive;
     font-family: 'Nanum Gothic', sans-serif; */
-
-
     @font-face {
       font-family: 'nexon';
       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');

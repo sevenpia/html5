@@ -47,10 +47,9 @@ li {
 a {
   text-decoration: none;
 }
-a:link {
-}
+a:link,
 a:visited {
-  color: #666;
+  color: #111;
 }
 a:hover {
   color: hotpink;
