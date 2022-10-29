@@ -99,3 +99,6 @@ button.top {
   font-size: 1.3rem;
   text-shadow: 2px 2px #fff;
 }
+.jst a {
+  display: block;
+}
