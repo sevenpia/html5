@@ -7,7 +7,11 @@ $(document).ready(function () {
     $(".modal").fadeOut();
   })
 
-})
+  $(".modal").click(function (event) {
+    $(this).fadeOut();
+  });
+
+});
 
 
 var topbt = document.getElementById("topbt");
