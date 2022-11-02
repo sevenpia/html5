@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>속성 선택자</title>
+  <style>
+    :root {
+      --main-color: hotpink;
+      --sub-color: #d3ad7f;
+      --black: #13131a;
+      --bg: #010103;
+      --border: 1rem solid rgba(255, 255, 255, 0.3);
+    }
+
+    html {}
+
+    * {
+      transition: 0.2s linear;
+    }
+
+    body {}
+
+    .wrap {
+      width: 800px;
+      margin: 30px auto;
+      border: 3px solid #ccc;
+      padding: 40px;
+    }
+
+    ul {
+      list-style: circle;
+      /* margin-bottom: 50px; */
+    }
+
+    li {
+      padding: 5px 30px;
+    }
+
+    li a {
+      font-size: 16px;
+      color: blue;
+      text-decoration: none;
+    }
+
+    [href *="w3"] {
+      background: blue;
+      color: white;
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+      background-color: #ab9;
+      border: 0;
+      border-radius: 15px 15px 0 0;
+      color: #fff;
+      text-shadow: 3px 3px 2px #666;
+      cursor: pointer;
+    }
+
+    .link2:hover {
+      background-color: var(--main-color)
+    }
+
+    button {
+      display: inline-block;
+      margin-top: 50px;
+    }
+
+    ul li:nth-child(4) {
+      background-color: #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>HTML5 참고 사이트 </h1>
+    <p>(아래 링크 중 파란색 배경의 링크는 W3C 사이트로 연결됩니다.)</p>
+    <ul>
+      <li><a href="http://www.w3c.org/TR/html" target="_blank">HTML 표준안 사이트</a></li>
+      <li><a href="http://www.webplatform.org" target="_blank">튜토리얼과 아티클</a></li>
+      <li><a href="http://caniuse.com" target="_blank">HTML 지원 여부 체크</a></li>
+      <li><a href="http://www.w3c.org/TR/css3-mediaqueries" target="_blank">미디어쿼리</a></li>
+    </ul>
+
+    <button>네이버</button>
+    <button class="link2">다음</button>
+    <button><a href="http://www.naver.com" target="_blank">구글</a></button>
+
+
+
+
+  </div> <!-- wrap end -->
+</body>
+
+</html>
