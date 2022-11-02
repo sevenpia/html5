@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 레이아웃</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* @font-face {
+      font-family: 'NEXON';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    } */
+
+    /* @font-face {
+      font-family: 'MaplestoryOTFBold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Bazzi';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    } */
+
+    body {
+      /* font-family: "맑은 고딕", "고딕", "굴림", sans-serif; */
+      /* font-family: 'Bazzi', sans-serif; */
+      font-family: 'IBM Plex Sans KR', "맑은 고딕", "돋움", "굴림", sans-serif;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+
+    a {
+      padding: 5px;
+    }
+
+    nav ul li a:link {
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff0;
+    }
+
+
+    .wrap {
+      width: 70%;
+      height: 1500px;
+      margin: 50px auto;
+      border: 1px solid #00f;
+    }
+
+    nav {
+      margin: 30px auto 0;
+      width: 70%;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      text-align: center;
+
+    }
+
+    nav ul li {
+      font-size: 1.5em;
+      padding-left: 7px;
+      margin-bottom: 15px;
+      border-left-width: 5px;
+      border-left-color: #990066;
+      border-left-style: solid;
+      display: inline-block;
+      text-align: center;
+      padding: 10px;
+    }
+
+
+    section#content {
+      margin-top: 80px;
+    }
+
+    section article {
+      width: 80%;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      border-top: 1px #a6a6a6 dashed;
+      border-bottom: 1px #a6a6a6 dashed;
+      margin: 0 auto;
+    }
+
+    section article h3 {
+      background-color: #abc;
+      border-radius: 20px;
+      padding: 15px;
+    }
+
+    section article h3:hover {
+      background-color: #aaa;
+    }
+
+
+
+    footer {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      background: #eee;
+      text-align: center;
+      font-weight: 900;
+      margin-top: 80px;
+    }
+
+    #topbtn {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      border: 0;
+      background-color: #abc;
+      border-radius: 15px;
+    }
+
+    #topbtn:hover {
+      background-color: #a99;
+    }
+
+    #topbtn a {
+      display: block;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      color: #fff;
+      padding: 10px 0px;
+    }
+
+    .bb {}
+
+    .cc {}
+  </style>
+</head>
+
+<body>
+  <div class="wrap" id="wrap">
+    <nav>
+      <ul>
+        <li><a href="#">애완견 종류</a></li>
+        <li><a href="#">입양하기</a></li>
+        <li><a href="#">건강돌보기</a></li>
+        <li><a href="#">더불어살기</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <h2 id="top">강아지 용품 준비하기</h2>
+      <article>
+        <h3>강아지 집 </h3>
+        <p class="bb">강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는 박음질이 잘 되어 있는지,
+          세탁이 간편한 제품인지 꼭 확인하시고 고르시는 것이 좋습니다.</p>
+      </article>
+      <article>
+        <h3>강아지 먹이 </h3>
+        <p class="cc">강아지의 먹이는 꼭 어린 강아지용으로 나와있는 사료를 선택하세요. 강아지들은 사람에 비해 성장속도가 8배정도 빠르답니다. 따라서 강아지에게는 성장속도에 맞는 사료를 급여하셔야
+          합니다. 사람이 먹는
+          음식을 먹게 되면 양념과 향신료에 입맛이 익숙해지고, 비만이 될 가능성이 매우 높아집니다. 강아지용 사료는 생후 12개월까지 급여하셔야 합니다.</p>
+      </article>
+    </section>
+    <footer>
+      <p>Copyright 2022 dogcom</p>
+    </footer>
+
+
+    <button id="topbtn"><a href="#wrap">Top</a></button>
+  </div>
+</body>
+
+</html>
