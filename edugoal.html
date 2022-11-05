@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교육목표</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .wrapall {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrap {
+      /* margin: 50px auto; */
+      width: 1000px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .box {
+      width: 80%;
+      padding: 30px;
+      margin: 20px auto;
+      background-color: #eee;
+      border-radius: 15px;
+      position: relative;
+    }
+
+    .box span.num {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #333;
+      line-height: 30px;
+      color: #fff;
+      margin-right: 15px;
+    }
+
+    span.red {
+      background-color: #f00;
+      padding: 6px;
+      color: #fff;
+      font-weight: bold;
+      display: inline-block;
+      border-radius: 10px;
+
+    }
+
+    span.baro {
+      position: absolute;
+      right: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapall">
+    <div class="wrap">
+      <h1>강의 목표. </h1>
+      <div class="box box1"><span class="num">1</span> html,css, javascript의 기본문법을 예제와 함께 학습합니다.
+        <a href="#"> <span class="baro">바로가기</span></a>
+      </div>
+      <div class="box box2"><span class="num">2</span> 화려한 웹UI를 구현해서 포트폴리오를 완성합니다.<a href="#"> <span
+            class="baro">바로가기</span></a></div>
+      <div class="box box3"><span class="num">3</span> 바로 실무에 <span class="red"> 써먹을 수 있는 역량</span>을 강화합니다.<a
+          href="#"><span class="baro">바로가기</span></a></div>
+    </div>
+  </div>
+</body>
+
+</html>
