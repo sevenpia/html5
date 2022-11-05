@@ -20,9 +20,9 @@
   </div>
 
   <div class="wrap clear">
-    <div class="box box1">box1</div>
-    <div class="box box2">box2</div>
-    <div class="box box3">box3</div>
+    <div class="box inblo box1">box1</div>
+    <div class="box inblo box2">box2</div>
+    <div class="box inblo box3">box3</div>
 
   </div>
 
@@ -57,7 +57,6 @@
       overflow: hidden;
       padding-bottom: 50px;
       margin: 50px auto;
-
     }
 
     .clear::after {
@@ -69,9 +68,8 @@
 
     .box {
       width: 200px;
-      height: 200px;
       margin-left: 75px;
-      margin-top: 50px;
+      margin-top: 100px;
       line-height: 200px;
       text-align: center;
       color: #fff;
@@ -79,31 +77,36 @@
       font-size: 22px;
       text-shadow: 0 3px 3px rgb(54, 153, 82), 0 5px 5px #aed;
       transition: all 0.3s ease-in;
-
     }
+
+    .wrap .inblo {
+      display: inline-block;
+    }
+
+
+    /* wrap2 관련 */
+    .wrap2 .box {
+      float: left;
+    }
+
 
     .box1 {
-      margin-top: 100px;
       background-color: #abc;
-      transition: all 0.3s ease-in;
     }
+
+    .box2 {
+      background-color: #cda;
+    }
+
+    .box3 {
+      background-color: #eba;
+    }
+
 
     .box1:hover,
     .box2:hover,
     .box3:hover {
       margin-top: 50px;
-    }
-
-    .box2 {
-      margin-top: 100px;
-      background-color: #cda;
-
-
-    }
-
-    .box3 {
-      margin-top: 100px;
-      background-color: #eba;
     }
 
 
@@ -122,10 +125,6 @@
       display: block;   
     
     */
-
-    .box {
-      float: left;
-    }
   </style>
 </body>
 
