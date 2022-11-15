@@ -77,10 +77,11 @@ span.bbb {
   background: rgba(89, 189, 8, 0.752);
   width: 100px;
   height: 100px;
+  line-height: 100px;
   padding: 20px;
   margin: 30px;
   text-align: center;
-  line-height: 100px;
+  transition: 0.3s ease-in-out;
 }
 
 p.mt60 {
