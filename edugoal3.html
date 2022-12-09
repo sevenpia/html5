@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교육목표</title>
+  <style>
+    .box_wrap {
+      width: 800px;
+      padding: 30px;
+      margin: 0 auto;
+      border: 1px solid #f00;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    .box {
+      width: 90%;
+      padding: 20px;
+      border: 1px solid #f00;
+      background-color: #eee;
+      border-radius: 15px;
+      margin: 20px;
+      position: relative;
+    }
+
+    /* 인라인 요소 는 가로값, 세로값을 가질 수 업다. 
+    블록요소나 인라인블록 요소로 만들어 준다.
+ */
+
+    span.black {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 20px;
+
+    }
+
+    span.baro {
+      position: absolute;
+      right: 20px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box_wrap">
+    <h1>교육목표</h1>
+    <ul>
+      <li class="box"><span class="black"> 1 </span> html,css, javascript의 기본문법을 예제와 함께 학습합니다. <span
+          class="baro">바로가기</span></li>
+      <li class="box"><span class="black"> 2 </span> 화려한 웹UI를 구현해서 포트폴리오를 완성합니다.<span class="baro">바로가기</span></li>
+      <li class="box"><span class="black"> 3 </span>바로 실무에 써먹을 수 있는 역량을 강화합니다. <span class="baro">바로가기</span></li>
+    </ul>
+  </div>
+
+</body>
+
+</html>

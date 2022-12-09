@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교육목표2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a:link {
+      color: #666;
+    }
+
+    a:visited {
+      color: #333;
+    }
+
+    a:hover {
+      color: darkmagenta;
+      font-weight: bold;
+    }
+
+
+    a:active {
+      color: coral;
+    }
+
+    .wrapall {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .wrap {
+      width: 1000px;
+      margin: 50px auto;
+    }
+
+    .box {
+      width: 80%;
+      padding: 30px;
+      background-color: #eee;
+      margin: 20px auto;
+      border-radius: 20px;
+      position: relative;
+    }
+
+    span.num {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: #333;
+      color: #fff;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 20px;
+
+    }
+
+    span.red {
+      background-color: #f00;
+      padding: 5px;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    .baro {
+      position: absolute;
+      right: 30px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapall">
+    <div class="wrap">
+      <h1>교육목표</h1>
+      <div class="box box1"><span class="num">1</span> html,css, javascript의 기본문법을 예제와 함께 학습합니다. <a href="#"> <span
+            class="baro">바로가기</span></a>
+      </div>
+      <div class="box box2"><span class="num">2</span> 화려한 웹UI를 구현해서 포트폴리오를 완성합니다. <a href="#"><span
+            class="baro">바로가기</span></a></div>
+      <div class="box box3"><span class="num">3</span> 바로 실무에 <span class="red"> 써먹을 수 있는 역량</span>을 강화합니다. <a
+          href="#"><span class="baro">바로가기</span></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

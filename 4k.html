@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>inline-block</title>
+</head>
+
+<body>
+  <div class="tit">
+    <h1>박스 요소의 가로 정렬방법</h1>
+    <h2>첫번째 방법.</h2>
+    <p> 자식요소에 display: inline-block; 부모요소에 overflow:hidden; : <br>
+      부모요소의 세로길이를 복구시킨다.</p>
+
+    <h2>두번째방법.</h2>
+    <p>float:left; 및 ::after 가상요소 사용하여 부모요소의 세로길이를 복구시킨다.</p>
+  </div>
+
+  <div class="wrap clear">
+    <div class="box inblo box1">box1</div>
+    <div class="box inblo box2">box2</div>
+    <div class="box inblo box3">box3</div>
+
+  </div>
+
+
+  <div class="wrap2 clear">
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+
+  </div>
+
+  <style>
+    .tit {
+      width: 1000px;
+      margin: 50px auto;
+    }
+
+    .tit h2 {
+      color: #aba;
+    }
+
+    .tit p {
+      font-size: 22px;
+    }
+
+    /* 자신의 높이를 복구시켜준다.  */
+
+    .wrap,
+    .wrap2 {
+      width: 900px;
+      background-color: #999;
+      overflow: hidden;
+      padding-bottom: 50px;
+      margin: 50px auto;
+    }
+
+    .clear::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+
+    .box {
+      width: 200px;
+      margin-left: 75px;
+      margin-top: 100px;
+      line-height: 200px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 22px;
+      text-shadow: 0 3px 3px rgb(54, 153, 82), 0 5px 5px #aed;
+      transition: all 0.3s ease-in;
+    }
+
+    .wrap .inblo {
+      display: inline-block;
+    }
+
+
+    /* wrap2 관련 */
+    .wrap2 .box {
+      float: left;
+    }
+
+
+    .box1 {
+      background-color: #abc;
+    }
+
+    .box2 {
+      background-color: #cda;
+    }
+
+    .box3 {
+      background-color: #eba;
+    }
+
+
+    .box1:hover,
+    .box2:hover,
+    .box3:hover {
+      margin-top: 50px;
+    }
+
+
+    /* 가로 배열하는 방법1 : 
+    display: inline-block  */
+
+    /* .box {
+      display: inline-block;
+    } */
+
+    /* 가로 배열하는 방법2     float:left
+    ::after 가성 선택자 사용하여 
+    높이를 인지시켜준다.  
+      content: "";
+      clear: both;
+      display: block;   
+    
+    */
+  </style>
+</body>
+
+</html>

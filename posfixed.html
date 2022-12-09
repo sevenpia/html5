@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="KO">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date 객체사용</title>
+  <style>
+    body {
+      background: url('images/icon1.jpg') no-repeat fixed right top;
+      /* background-repeat: no-repeat; */
+      /* background-attachment: fixed; */
+      /* background-position: right bottom; */
+      background-size: 150px;
+      height: 2000px;
+    }
+
+    .topbt {
+      /* background: url(images/girl.png) right bottom;
+      background-size: 100px;
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 180px;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      border: 1px solid #f00;
+      text-align: center; */
+    }
+
+    .wrap {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      width: 100%;
+      height: 100px;
+      background: #abc;
+      position: relative;
+    }
+
+    header #calendar {
+      width: 200px;
+      height: 30px;
+      line-height: 30px;
+      position: absolute;
+      top: 0px;
+      right: 20px;
+      text-align: right;
+      background-color: rgba(255, 192, 203, 0.5);
+      padding: 5px;
+
+    }
+
+    .slider {
+      width: 100%;
+      height: 300px;
+      background-color: #395;
+    }
+
+    .contents {
+      width: 100%;
+      height: 200px;
+      background-color: #39f;
+    }
+
+    footer {
+      width: 100%;
+      height: 100px;
+      background: #cde;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="wrap">
+    <header>여기는 헤더
+      <div id="calendar">
+        <!-- <script src="js/1.js"></script> -->
+      </div>
+
+    </header>
+    <div class="slider"></div>
+    <div class="contents"></div>
+    <footer>여기는 풋터
+    </footer>
+  </div> <!-- wrap end  -->
+
+  <div class="topbt"> Go Top </div>
+
+
+
+  <script>
+
+    var date = new Date();
+    let calendar = document.getElementById('calendar');
+
+    let year = date.getFullYear()
+    let month = date.getMonth()
+    let ddate = date.getDate()
+    let day = date.getDay()
+
+
+    switch (date.getDay()) {
+      case 0:
+        day = "일";
+        break;
+      case 1:
+        day = "월";
+        break;
+      case 2:
+        day = "화";
+        break;
+      case 3:
+        day = "수";
+        break;
+      case 4:
+        day = "목";
+        break;
+      case 5:
+        day = "금";
+        break;
+      case 6:
+        day = "토";
+    }
+
+
+    /*     calendar.innerHTML =
+              date.getFullYear() + " 년 " +
+              (date.getMonth() + 1) + " 월 " +
+              date.getDate() + " 일 " +
+              day + "요일"
+    */
+
+    calendar.innerHTML =
+      year + " 년 " +
+      (month + 1) + " 월 " +
+      ddate + " 일 " +
+      day + "요일"
+
+
+
+
+
+    function dayday() {
+      var today = new Date();
+      var year = today.getFullYear()
+      var month = today.getMonth();
+      var date = today.getDate();
+      var day = today.getDay();
+      return document.write(`${year}년 ${month}월 ${date}일 ${day}요일`);
+    }
+
+    // day()
+
+
+    var daytitle = document.getElementsByClassName('day')
+    console.log(daytitle)
+    // daytitle[0].addEventListener('click', function () {
+    //   alert('반갑습니다.');
+    //   // day();
+    // })
+    // document.getElementsByClassName('day')[0].innerHTML = day()
+    // daytitle[0].innerHTML = '여기에 날짜..'
+
+    // let html = document.write(`${year}년 ${month}월 ${date}일 ${day}요일`);
+    // document.getElementsByClassName('day')[0].textContent = dayday()
+
+    // document.write(`fdffsd d  `)
+    // day();
+
+    // document.getElementsByClassName('day')[0].textContent = `ㅇㄴㄴㅇㄹㅇ 입니다.`
+
+    document.write("<br/>")
+
+    // document.write(dayday)
+
+
+
+  </script>
+</body>
+
+</html>
