@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "맑은 고딕", MalgunGothic, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background: #666;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #690;
+}
+.navbar ul {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar ul li {
+  padding: 0 30px;
+  position: relative;
+}
+.navbar ul li:first-child {
+  margin-left: 3em;
+  margin-right: auto;
+}
+
+.navbar ul li::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 0.4em;
+  background-color: pink;
+  bottom: -1em;
+  transition: all 0.4s;
+  left: 25%;
+  right: 0%;
+}
+
+.navbar ul li:hover::after {
+  width: 60%;
+}
