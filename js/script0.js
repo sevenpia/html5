@@ -28,7 +28,7 @@ for (let i = 0; i < ccc.length; i++) {
  */
 
 var bt = document.querySelector('.top');
-console.log(top);
+// console.log(top);
 
 
 window.addEventListener('scroll', function () {
@@ -37,7 +37,7 @@ window.addEventListener('scroll', function () {
   } else {
     bt.style.display = 'none';
   }
-  console.log(this.scrollY);
+  // console.log(this.scrollY);
 })
 
 
