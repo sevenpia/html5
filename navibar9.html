@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navibar9</title>
+  <style>
+    ul,
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    li {
+      padding: 1.5rem;
+      border: 1px solid #ccc;
+      margin-bottom: 2rem;
+
+    }
+
+    .btn {
+      width: 5rem;
+      text-align: center;
+      font-size: 1.3rem;
+      position: relative;
+    }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.32rem;
+      background: #fa1111;
+      left: 0;
+      bottom: 0;
+    }
+
+    /* animate btn-center btn */
+    .btn-center::after {
+      transform: scale(0, 1);
+      transform-origin: center;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-center:hover::after {
+      transform: scale(1, 1);
+    }
+
+    /* animate btn-left  btn */
+    .btn-left::after {
+      transform: scale(0, 1);
+      transform-origin: left;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-left:hover::after {
+      transform: scale(1, 1);
+    }
+
+    /* animate btn-right   btn */
+    .btn-right::after {
+      transform: scale(0, 1);
+      transform-origin: right;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-right:hover::after {
+      transform: scale(1, 1);
+    }
+
+    < !DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>navibar9</title><style>ul,
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    li {
+      padding: 1.5rem;
+      border: 1px solid #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      width: 5rem;
+      text-align: center;
+      font-size: 1.3rem;
+      position: relative;
+      box-shadow:
+        2.3px 3.9px 6.3px rgba(0, 0, 0, 0.031),
+        5.4px 9px 14.5px rgba(0, 0, 0, 0.045),
+        9.7px 16.2px 26.1px rgba(0, 0, 0, 0.055),
+        16.1px 26.8px 43.4px rgba(0, 0, 0, 0.065),
+        26.5px 44.2px 71.4px rgba(0, 0, 0, 0.075),
+        46.2px 77.2px 124.8px rgba(0, 0, 0, 0.089),
+        100px 167px 270px rgba(0, 0, 0, 0.12);
+
+    }
+
+    .btn::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.32rem;
+      border-radius: 10%;
+      background: #fa1111;
+      left: 0;
+      bottom: 0;
+    }
+
+    /* animate btn-center btn */
+    .btn-center::after {
+      transform: scale(0, 1);
+      transform-origin: center;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-center:hover::after {
+      transform: scale(1, 1);
+    }
+
+    /* animate btn-left  btn */
+    .btn-left::after {
+      transform: scale(0, 1);
+      transform-origin: left;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-left:hover::after {
+      transform: scale(1, 1);
+    }
+
+    /* animate btn-right   btn */
+    .btn-right::after {
+      transform: scale(0, 1);
+      transform-origin: right;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-right:hover::after {
+      transform: scale(1, 1);
+    }
+
+    /* animate btn-bottom btn */
+
+    .btn-bottom {
+      overflow: hidden;
+
+    }
+
+    .btn-bottom::after {
+      transform: translateY(10px);
+      transition: transform 0.2s ease;
+    }
+
+    .btn-bottom:hover::after {
+      transform: translateY(0px);
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="container">
+    <li class="btn btn-center"><a href="javascript:void(0)">center</a></li>
+    <li class="btn btn-left"><a href="javascript:void(0)">left</a></li>
+    <li class="btn btn-right"><a href="javascript:void(0)">right</a></li>
+    <li class="btn btn-bottom"><a href="javascript:void(0)">bottom</a></li>
+  </ul>
+
+</body>
+
+</html>
