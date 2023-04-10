@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "맑은 고딕", MalgunGothic, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.clear {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #f00;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #aaa;
+}
+
+/* subtop */
+
+.subtop {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: burlywood;
+}
+
+.subtop h2 {
+  transform: translateY(150px);
+  transition: transform 0.2s ease;
+}
+
+.subtop p {
+  transform: translateY(200px);
+}
+
+.subtop:hover.subtop h2 {
+  transform: translateY(0px);
+  transition: transform 0.2s ease;
+}
+
+.subtop:hover.subtop p {
+  transform: translateY(10px);
+  transition: transform 0.2s ease;
+  transition-delay: 0.3s;
+}
+
+/* subtop2 : keyframe 애니메이션 만들기 */
+.subtop2 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #f00;
+}
+
+.subtop2 h2 {
+  position: relative;
+  animation-name: subtitle;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+}
+
+.subtop2 .pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.subtop2 p.move {
+  position: relative;
+  bottom: -20px;
+  left: 0px;
+  animation-name: subp;
+  animation-duration: 1.3s;
+  animation-delay: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes subtitle {
+  0% {
+    bottom: -150px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes subp {
+  0% {
+    /* bottom: -300px; */
+    opacity: 0;
+    left: 100px;
+  }
+  100% {
+    /* bottom: -20px; */
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+/* subtop3  제이쿼리로 만들기*/
+
+.subtop3 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #f00;
+}
+
+.subtop3 .pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.subtop3 h2 {
+  position: relative;
+  top: 180px;
+  left: 0;
+  opacity: 0;
+}
+.subtop3 p.move {
+  position: relative;
+  bottom: -100px;
+  left: 0px;
+}
+/* subtop4  aos플러그인으로 만들기*/
+
+.subtop4 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #f00;
+}
+
+.subtop4 .pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.subtop4 h2 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.subtop4 p.move {
+  position: relative;
+  bottom: -20px;
+  left: 0px;
+}
+
+/* contents  */
+.contents {
+  width: 100%;
+  height: 800px;
+  background-color: #ccc;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+}

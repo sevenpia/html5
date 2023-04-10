@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/movemake.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/movemake.js"></script>
+  <title>움직임만들기1-transition</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      로고.. 메뉴 자리..
+    </header>
+    <div class="subtop">
+      마우스를 올리면 내용물이나온다... transition 사용함 (subtop)
+      <h2>COMPANY</h2>
+      <p>창의적이고 감각적인 디자인으로 보답하는 비지니스 파트너가 되겠습니다. </p>
+    </div>
+
+    <div class="subtop2">
+      <p class="pos"> css3 : animation 사용. keyframe 애니메이션 사용 (subtop2)</p>
+      <h2>COMPANY</h2>
+      <p class="move">창의적이고 감각적인 디자인으로 보답하는 비지니스 파트너가 되겠습니다. </p>
+    </div>
+
+    <div class="subtop3">
+      <p class="pos">제이쿼리- animate 메서드 사용-콜백함수 (subtop3)</p>
+      <h2>COMPANY</h2>
+      <p class="move">창의적이고 감각적인 디자인으로 보답하는 비지니스 파트너가 되겠습니다. </p>
+    </div>
+    <div class="subtop4">
+      <p class="pos">aos 플러그인 사용하기 (subtop4)</p>
+      <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">COMPANY</h2>
+      <p class="move" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-sine">
+        창의적이고
+        감각적인 디자인으로 보답하는 비지니스 파트너가
+        되겠습니다. </p>
+    </div>
+    <div class="contents">페이지내용들</div>
+
+    <div class="subtop4">
+      <p class="pos">aos 플러그인 사용하기 (subtop4)</p>
+      <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine">COMPANY</h2>
+      <p class="move" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-sine">
+        창의적이고
+        감각적인 디자인으로 보답하는 비지니스 파트너가
+        되겠습니다. </p>
+    </div>
+
+    <footer>copyright</footer>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
