@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="js/jquery-1.12.3.js"></script> -->
+  <link defer href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/movemake2.js"></script>
+  <title>움직임만들기2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrap {
+      margin: 0 auto;
+      width: 1200px;
+    }
+
+    header {
+      width: 100%;
+      height: 100px;
+      background: #aaa;
+
+    }
+
+    .subtop1,
+    .subtop2,
+    .subtop3,
+    .subtop4 {
+      width: 100%;
+      height: 200px;
+      background-color: #bbb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .contents {
+      width: 100%;
+      height: 800px;
+      background: #e9f392;
+    }
+
+    .pos {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .subtop1 h2 {
+      /* position: relative;
+      top: 120px; */
+      transform: translateY(120px);
+      transition: transform 0.2s ease;
+    }
+
+    .subtop1 p.text {
+      transform: translateY(150px);
+      transition: transform 0.2s ease;
+      transition-delay: 0.3s;
+    }
+
+
+    .subtop1:hover.subtop1 h2 {
+      transform: translateY(0px);
+      /* position: relative;
+      top: 0px;
+      left: 0px; */
+
+    }
+
+    .subtop1:hover.subtop1 p.text {
+      transform: translateY(30px);
+    }
+
+
+    footer {
+      width: 100;
+      height: 100px;
+      background: #ccc;
+    }
+
+
+    .subtop2 {
+      background-color: rgb(188, 231, 103);
+    }
+
+
+    .subtop2 h2 {
+      position: relative;
+      animation-name: subtitle;
+      animation-duration: 1.3s;
+      animation-timing-function: ease-in-out;
+    }
+
+    .subtop2 p.text {
+      position: relative;
+      top: 20px;
+      animation-name: subp;
+      animation-duration: 1.3s;
+      animation-delay: 0.6s;
+      animation-timing-function: ease-in-out;
+    }
+
+
+    @keyframes subtitle {
+      0% {
+        bottom: -200px;
+      }
+
+      100% {
+        bottom: 0px;
+        ;
+      }
+    }
+
+    @keyframes subp {
+      0% {
+        top: 120px;
+        opacity: 0;
+      }
+
+      100% {
+        top: 20px;
+        opacity: 1;
+
+      }
+    }
+
+    .subtop3 {
+      background: #a1f3f3;
+    }
+
+    .subtop3 h2 {
+      position: relative;
+      top: 100px;
+      opacity: 0;
+    }
+
+    .subtop3 p.text {
+      position: relative;
+      left: 500px;
+      opacity: 0;
+      top: 20px;
+    }
+
+    .subtop4 {}
+
+    .subtop4 h2 {}
+
+    .subtop4 p.text {
+      position: relative;
+      top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>로고자리.. 메뉴자리 </header>
+    <div class="subtop1">
+      <p class="pos"> 마우스를 올리면 내용물이나온다... transition 사용함 (subtop)</p>
+      <h2>COMPANY</h2>
+      <p class="text"> 창의적이고 감각적인 디자인으로 보답하는 비지니스 파트너가 되겠습니다. </p>
+    </div>
+    <div class="subtop2">
+      <p class="pos"> css3 : animation 사용. keyframe 애니메이션 사용 (subtop2)</p>
+      <h2>COMPANY</h2>
+      <p class="text"> 창의적이고 감각적인 디자인으로 보답하는 비지니스 파트너가 되겠습니다. </p>
+    </div>
+    <div class="subtop3">
+      <p class="pos"> 제이쿼리- animate 메서드 사용-콜백함수 (subtop3)</p>
+      <h2>COMPANY</h2>
+      <p class="text"> 창의적이고 감각적인 디자인으로 보답하는 비지니스 파트너가 되겠습니다. </p>
+    </div>
+
+    <div class="subtop4">
+      <p class="pos"> aos 플러그인사용 (subtop4)</p>
+      <h2 data-aos="fade-up" data-aos-duration="1500">COMPANY</h2>
+      <p class="text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000"> 창의적이고 감각적인 디자인으로 보답하는 비지니스
+        파트너가
+        되겠습니다. </p>
+    </div>
+
+    <div class="contents">
+      페이지 내용들
+    </div>
+
+
+    <div class="subtop4">
+      <p class="pos"> aos 플러그인사용 (subtop4)</p>
+      <h2 data-aos="fade-up" data-aos-duration="1500">COMPANY</h2>
+      <p class="text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800"> 창의적이고 감각적인 디자인으로 보답하는 비지니스
+        파트너가
+        되겠습니다. </p>
+    </div>
+
+
+    <footer>copyright 내용</footer>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
