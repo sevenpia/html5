@@ -8,7 +8,6 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop()) {
       $("header").addClass('shrink');
-      console.log("header ")
     } else {
       $("header").removeClass('shrink');
     }
