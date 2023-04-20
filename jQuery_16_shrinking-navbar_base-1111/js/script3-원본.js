@@ -2,8 +2,8 @@ $(document).ready(function () {
 
   var $window = $(window),
     $mainHeader = $("#main-header"),
-    $defaultLogo = "images/eleven.svg",
-    $smallLogo = "images/eleven-small.svg";
+    $defaultLogo = "images/logo.svg",
+    $smallLogo = "images/logo-shrink.svg";
 
   $window.scroll(function () {
     if ($(this).scrollTop() > 100) {

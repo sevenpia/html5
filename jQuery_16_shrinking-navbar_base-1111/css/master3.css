@@ -34,7 +34,7 @@ a {
 /* Header */
 /************************************************/
 header {
-  padding: 0 2em;
+  padding: 0 4em;
   position: fixed;
   top: 0;
   background: #fff;
@@ -83,6 +83,7 @@ header.shrink nav ul li {
 
 .container main p {
   height: 50em;
+  border: 1px solid #00f;
 }
 
 /************************************************/
