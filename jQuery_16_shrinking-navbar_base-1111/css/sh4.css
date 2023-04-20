@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 a {
   text-decoration: none;
@@ -90,11 +93,31 @@ footer {
 }
 footer hr {
   margin: 3rem 0;
-  background-color: #f00;
-  height: 1px;
+  background-color: #ccc;
+  height: 2px;
   border: none;
   box-sizing: border-box;
 }
 footer p {
   text-align: center;
+}
+
+.topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #fa7a30;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+.topBtn:hover {
+  background: #c74b03;
 }
