@@ -121,6 +121,7 @@ nav ul.gnb > li {
 nav ul.gnb > li > a {
   display: block;
   font-weight: bold;
+  transition: all 0.4s ease-in-out;
 }
 
 nav ul.gnb > li:hover > a {
@@ -147,6 +148,7 @@ nav ul.gnb > li ul.sub li {
 nav ul.gnb > li ul.sub li a {
   display: block;
   font-weight: bold;
+  transition: all 0.4s ease-in-out;
 }
 
 nav ul.gnb > li ul.sub li:hover {
@@ -189,6 +191,7 @@ nav ul.gnb > li ul.sub li:hover {
   text-align: center;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .contents h2:hover {
@@ -283,6 +286,7 @@ section.con2 img {
   width: 95%;
   text-align: center;
   padding-left: 10px;
+  transition: all 0.4s ease-in-out;
 }
 
 section.con2 img:hover {
@@ -310,6 +314,7 @@ section.con3 ul.baro li {
   text-align: center;
   border-radius: 20px;
   margin-top: 5px;
+  transition: all 0.4s ease-in-out;
 }
 
 section.con3 ul.baro li a {

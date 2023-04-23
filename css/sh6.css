@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "맑은 고딕", MalgunGothic, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+header {
+  width: 100%;
+  height: 7.5rem;
+  background: rgba(250, 164, 93, 0.6);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+header.shrink {
+  height: 3.75rem;
+}
+
+header a.pos {
+  margin-left: 4rem;
+  margin-right: auto;
+}
+header ul {
+  margin-right: 4rem;
+  margin-left: auto;
+  display: flex;
+}
+header ul li {
+  padding: 1rem 0;
+  /* border: 1px solid #f00; */
+}
+header ul li a {
+  padding: 1rem;
+  /* border: 1px solid #00f; */
+}
+
+header ul li a:hover {
+  font-weight: 900;
+}
+
+.container {
+  width: 80%;
+  margin: 9.5rem auto;
+}
+
+.container p {
+  width: 100%;
+  height: 800px;
+  border: 1px solid #bbb;
+  margin: 2rem 0;
+}
+
+footer {
+  width: 100%;
+  height: 7.5rem;
+  background: #ccc;
+}
+footer p {
+  text-align: center;
+}
+
+.topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 7px;
+  background: #f86024;
+  display: none;
+}
