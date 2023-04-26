@@ -120,11 +120,12 @@ header nav ul.gnb > li > a {
   line-height: 40px;
   background: #c88;
   color: #fff;
-  transition: 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 header nav ul.gnb > li:hover > a {
   background: #f55;
+  font-weight: 700;
 }
 
 header nav ul.sub {
@@ -141,6 +142,7 @@ header nav ul.gnb ul.sub li {
   height: 40px;
   line-height: 40px;
   background: #eee;
+  transition: all 0.4s;
 }
 
 header nav ul.gnb ul.sub li a {
@@ -193,6 +195,11 @@ header nav ul.gnb ul.sub li:hover {
   text-align: center;
   line-height: 40px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contents_wrap h2:hover {
+  background: #ff5555;
 }
 
 .contents_wrap section.con1 {
@@ -275,16 +282,24 @@ header nav ul.gnb ul.sub li:hover {
   width: 350px;
   height: 200px;
   float: left;
+  position: relative;
+}
+
+section.con2 .banner {
+  width: 330px;
+  margin: 9px auto;
+  overflow: hidden;
 }
 
 .contents_wrap section.con2 img {
   display: block;
-  width: 330px;
-  margin: 9px auto;
-  transition: 0.3s ease;
+  width: 100%;
+  transition: all 0.4s ease;
 }
 
-.contents_wrap section.con2 img:hover {
+section.con2 .banner:hover img {
+  transform: scale(1.3);
+  transform-origin: center;
   opacity: 0.8;
 }
 
