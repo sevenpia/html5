@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Effects - Effect demo</title>
+  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
+  <style>
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      // $(".aa").toggle("bounce", { times: 3 }, "slow");
+      $("button").click(function () {
+        $(".aa").toggle("slide");
+      })
+
+    });
+  </script>
+</head>
+
+<body>
+  <button>버튼</button>
+  <p class="aa" style="width:100px; height: 100px; background-color: #f00">안녕</p>
+</body>
+
+</html>

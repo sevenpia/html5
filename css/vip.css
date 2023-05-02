@@ -1,0 +1,78 @@
+@import "reset11.css";
+section {
+}
+section .vis {
+  display: flex;
+  margin-bottom: 600px;
+  position: relative;
+}
+
+section .vis::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100%;
+  background-color: rgb(167 145 117 / 50%);
+  position: absolute;
+  top: 0;
+  left: 500px;
+  z-index: 1;
+  animation-name: move;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
+
+section .vis::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background-color: #a79175;
+  position: absolute;
+  top: 15rem;
+  left: 900px;
+  animation-name: move2;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes move2 {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+section .vis img {
+  margin-left: 0px;
+  border: 10px solid #f00;
+}
+
+section .vis img {
+  transition: all 0.4s;
+}
+
+section .vis .txt_box {
+  width: 100%;
+  margin: 10rem 2rem;
+}
+
+section .vis .txt_box h4 {
+  font-size: 3rem;
+}
+section .vis .txt_box .txt {
+  border: 1px solid #f00;
+  margin-top: 2rem;
+  line-height: 2rem;
+}

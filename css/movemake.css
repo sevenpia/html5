@@ -33,8 +33,11 @@ body {
 
 header {
   width: 100%;
-  height: 150px;
+  height: 200px;
   background-color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* subtop */
@@ -98,11 +101,13 @@ header {
 .subtop2 p.move {
   position: relative;
   bottom: -20px;
+  opacity: 0;
   left: 0px;
   animation-name: subp;
   animation-duration: 1.3s;
   animation-delay: 0.4s;
   animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 @keyframes subtitle {

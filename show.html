@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+    integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src=""></script>
+  <title>show 함수 </title>
+</head>
+
+<body>
+  <div class="container">
+    <button>버튼</button>
+    <p class="aa">Happy</p>
+    <p class="bb"></p>
+  </div>
+
+  <script>
+    /* 
+        $(document).ready(function () {
+          $("button").click(function () {
+            $("p").hide();
+          });
+        }); */
+
+    $(function () {
+      $("button").click(function () {
+        $("p.aa").stop().slideToggle(function () {
+          $(".bb").append("Hello! Nice Day<br>");
+        });
+      })
+
+      $(".aa").draggable();
+
+    })     /* ready end  */
+
+  </script>
+
+</body>
+
+</html>

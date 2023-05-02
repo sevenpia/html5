@@ -105,10 +105,13 @@
     .subtop2 p.text {
       position: relative;
       top: 20px;
-      animation-name: subp;
+      opacity: 0;
+      /*     animation-name: subp;
       animation-duration: 1.3s;
       animation-delay: 0.6s;
       animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; */
+      animation: subp 1.3s 0.6s ease-in-out forwards;
     }
 
 
@@ -132,7 +135,6 @@
       100% {
         top: 20px;
         opacity: 1;
-
       }
     }
 

@@ -1,0 +1,735 @@
+@import url(./reset11.css);
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+}
+.toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  background: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 3.4px 4.7px 9.8px -38px rgba(0, 0, 0, 0.04),
+    9.5px 12.9px 19.3px -38px rgba(0, 0, 0, 0.058),
+    22.9px 31.1px 32.4px -38px rgba(0, 0, 0, 0.074),
+    76px 103px 80px -38px rgba(0, 0, 0, 0.13);
+}
+
+.toggle:hover {
+  background: aqua;
+}
+
+.toggle .ham {
+  position: relative;
+  width: 50%;
+  height: 3px;
+  background: #fff;
+  transition: 0.5s;
+}
+.toggle .ham::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transition: 0.5s;
+}
+.toggle .ham::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.toggle.active {
+  background: aqua;
+}
+
+.toggle.active .ham {
+  background: rgba(0, 0, 0, 0);
+}
+.toggle.active .ham::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.toggle.active .ham::after {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+/* About section */
+
+section {
+  width: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 100px;
+  min-height: 100vh;
+  /* border: 10px solid #f00; */
+}
+section.banner {
+  position: relative;
+  width: 100%;
+}
+section.banner .imgSidebx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
+}
+
+section.banner .imgSidebx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+
+section.banner .cententBx {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 500px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+section.banner .cententBx h5.logoText {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  padding: 0px 10px;
+  letter-spacing: 0px;
+}
+
+section.banner .cententBx h5.logoText:hover {
+  background: #666;
+}
+section.banner .cententBx div {
+}
+section.banner .cententBx div h4 {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: 300;
+  line-height: 3rem;
+}
+section.banner .cententBx div h4 span {
+  color: aqua;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+section.banner .cententBx div h2 {
+  font-size: 3rem;
+  color: #333;
+  line-height: 3rem;
+  /* letter-spacing: -2px; */
+}
+section.banner .cententBx div p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  word-wrap: break-word;
+  line-height: 2.5rem;
+}
+
+.btn {
+  background: aqua;
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: #666;
+  color: #fff;
+}
+/* sci */
+.sci {
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.sci ul {
+  display: flex;
+}
+.sci ul li {
+  padding: 5px;
+}
+.sci ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.sci ul li:hover a {
+  /* color: aqua; */
+  opacity: 1;
+}
+
+.sci ul li a i.fa-brands {
+  font-size: 36px;
+}
+
+/* ****************************** */
+/*              about             */
+/* ****************************** */
+
+.about {
+  background: #000;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+}
+.title h2 {
+  position: relative;
+  color: #333;
+  font-size: 2rem;
+  letter-spacing: -2px;
+  color: aqua;
+  margin: 30px 0;
+  font-weight: 900;
+  /* text-shadow: 2px 2px 5px #272727; */
+}
+
+.title h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* bottom: 0; */
+  width: 60px;
+  height: 4px;
+  background: #333;
+}
+.title p {
+  width: 700px;
+  display: inline-block;
+}
+
+.title.white h2,
+.title.white p {
+  color: #fff;
+}
+
+.title.white h2::before {
+  background: #fff;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.content .textBx {
+  width: 49%;
+  min-width: 49%;
+  line-height: 2rem;
+  /* border: 10px solid #f00; */
+}
+.content .textBx p {
+  color: #fff;
+}
+.content .imgBx {
+  margin-left: 40px;
+}
+.content .imgBx img {
+  max-width: 100%;
+  /* height: auto; */
+}
+
+/* service */
+
+.services {
+}
+.services .content {
+  margin: 10px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.services .content .servicesBx {
+  padding: 26px 75px;
+  max-width: 494px;
+  margin: 0px;
+  margin: 23px;
+  text-align: center;
+  background: #eee;
+  transition: 0.5s;
+}
+
+.services .content .servicesBx:hover {
+  background: #000;
+}
+.services .content .servicesBx img {
+  max-width: 100%;
+  transition: 0.5s;
+  width: 200px;
+  height: auto;
+}
+
+.services .content .servicesBx:hover img {
+  filter: invert(1);
+  /* filter: grayscale(1); */
+}
+.services .content .servicesBx h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.services .content .servicesBx:hover h2 {
+  color: #fff;
+}
+.services .content .servicesBx p {
+  margin: 0;
+  transition: 0.5s;
+}
+.services .content .servicesBx:hover p {
+  color: #fff;
+}
+
+.work {
+}
+.work .content {
+  margin: 10px 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.work .content .workBx {
+  position: relative;
+  width: 385px;
+  height: 350px;
+  margin: 17px;
+  text-align: center;
+  transition: 0.5s;
+}
+.work .content .workBx .imgBx,
+.work .content .workBx .textBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work .content .workBx .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work .content .workBx .textBx {
+  background: #000;
+  opacity: 0;
+  transition: 0.5s;
+}
+.work .content .workBx .textBx:hover {
+  opacity: 0.85;
+}
+
+.work .content .workBx .textBx h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contactForm {
+  position: relative;
+  width: 1100px;
+  margin-top: 20px;
+}
+
+.contact .contactForm .row {
+  width: 100%;
+  display: flex;
+}
+.contact .contactForm .row .col50 {
+  width: 50%;
+  margin: 10px;
+}
+.contact .contactForm .row input,
+.contact .contactForm .row textarea {
+  width: 100%;
+  padding: 18px;
+  border: 0;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  resize: none;
+}
+.contact .contactForm .row .col100 {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+.contact .contactForm .row input[type="submit"] {
+  background: aqua;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  max-width: 150px;
+}
+
+.contact .contactForm .row .col100 input {
+}
+
+footer {
+  position: relative;
+  background: #111;
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright p {
+  padding: 40px;
+  color: #fff;
+}
+
+/********************************************************/
+/* sidebar */
+/********************************************************/
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -500%;
+  width: calc(100% - 500px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  z-index: 50;
+  transition: 0.5s;
+}
+.sidebar ul.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar ul.menu li {
+}
+.sidebar ul.menu li a {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 4rem;
+  /* margin: 20px 0; */
+  font-weight: 600;
+  transition: 0.5s;
+}
+.sidebar ul.menu li:hover a {
+  color: aqua;
+}
+.sidebar.active {
+  right: 0px;
+}
+
+.topBtn {
+  position: fixed;
+  right: -120px;
+  bottom: 30px;
+  background: #666;
+  color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 0.5s;
+}
+
+.topBtn:hover {
+  background: aqua;
+  color: #fff;
+}
+.topBtn.active {
+  right: 30px;
+}
+
+/* .bottomBtn {
+  position: fixed;
+  background: #666;
+  color: #fff;
+  padding: 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: 0.5s;
+  top: 200px;
+  right: 30px;
+}
+ */
+
+/* ********************************* */
+/*         responsive setting        */
+/* ********************************* */
+
+/* 677 이하 */
+@media (max-width: 677px) {
+  .title p {
+    width: 100%;
+  }
+  section.banner .cententBx div p {
+    line-height: 1rem;
+  }
+
+  section.banner {
+    width: 100%;
+    border: 10px solid #00f;
+  }
+
+  .banner .imgSidebx {
+    display: none;
+  }
+
+  section.banner .cententBx,
+  .sidebar {
+    width: 100%;
+    padding: 40px;
+  }
+
+  section.banner .cententBx div p {
+    width: 100%;
+  }
+
+  section.banner .cententBx h5.logoText {
+    left: 40px;
+  }
+
+  .sci {
+    left: 40px;
+  }
+
+  section {
+    padding: 40px;
+  }
+
+  section.about {
+    width: 100%;
+  }
+  section.about .content {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .content .textBx {
+    width: 100%;
+    min-width: 100%;
+    line-height: 2rem;
+  }
+
+  .content .imgBx {
+    margin-left: 0px;
+  }
+
+  .services .content .servicesBx {
+    padding: 28px 60px;
+    max-width: 578px;
+    margin: 13px;
+    width: 100%;
+  }
+
+  .work .content .workBx {
+    width: 100%;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .contact .contactForm .row {
+  }
+
+  .contactForm .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact .contactForm .row .col50 {
+    width: 100%;
+  }
+
+  .contact .contactForm .row .col100 {
+    width: 100%;
+  }
+
+  .sidebar ul.menu li a {
+    font-size: 2.4rem;
+  }
+}
+
+/* 678이상 800 이하  */
+@media (min-width: 678px) and (max-width: 800px) {
+  section.banner .imgSidebx {
+    display: none;
+  }
+  section.banner .cententBx {
+    width: 100%;
+  }
+  .content {
+    display: block;
+  }
+  .content .textBx {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .content .imgBx {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .title p {
+    width: 100%;
+  }
+  .services .content .servicesBx {
+    padding: 26px 66px;
+    max-width: 576px;
+    margin: 13px;
+  }
+
+  .work .content .workBx {
+    width: 100%;
+  }
+}
+
+/* 801이상 1000 이하  */
+@media (min-width: 801px) and (max-width: 1000px) {
+  section.banner .imgSidebx {
+    display: none;
+  }
+  section.banner .cententBx {
+    width: 100%;
+  }
+  .about .content {
+    display: block;
+  }
+  .content .textBx {
+    width: 100%;
+  }
+  .content .imgBx {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .services .content .servicesBx {
+    padding: 26px 13px;
+    max-width: 276px;
+    margin: 0px;
+    margin: 12px;
+  }
+  .work .content .workBx {
+    width: 250px;
+  }
+}
+
+/* 1001이상 1279 이하  */
+
+@media (min-width: 1001px) and (max-width: 1279px) {
+  .services .content .servicesBx {
+    padding: 26px 13px;
+    max-width: 346px;
+    margin: 0px;
+    margin: 12px;
+  }
+  .work .content .workBx {
+    width: 246px;
+    margin: 5px;
+  }
+  section.banner .cententBx div p {
+    line-height: 1.5rem;
+  }
+
+  .about .content {
+    display: block;
+  }
+  .content .textBx {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .content .imgBx {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+}
+
+/* 1280픽셀 이상 */
+@media (min-width: 1280px) {
+  .content .imgBx {
+    vertical-align: middle;
+  }
+  .content .textBx p {
+    height: 295px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 2rem;
+  }
+
+  .work .content {
+    width: 80%;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .work .content .workBx {
+    display: inline-block;
+  }
+}

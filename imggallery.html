@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>아코디언 내비게이션 (Flex 레이아웃) Img Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    ul.gallery {
+      height: 850px;
+      display: flex;
+    }
+
+    ul.gallery li {
+      border: 2px solid rgb(31, 30, 30);
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+
+    ul.gallery li:last-child {
+      border-right: none;
+    }
+
+    .gallery li:nth-child(1) {
+      background: url("images/1.jpg") no-repeat center center;
+    }
+
+    .gallery li:nth-child(2) {
+      background: url("images/2.jpg") no-repeat center center;
+    }
+
+    .gallery li:nth-child(3) {
+      background: url("images/3.jpg") no-repeat center center;
+    }
+
+    .gallery li:nth-child(4) {
+      background: url("images/1.jpg") no-repeat left bottom;
+    }
+
+    .gallery li:nth-child(5) {
+      background: url("images/2.jpg") no-repeat right center;
+    }
+
+
+    ul.gallery li:hover {
+      filter: grayscale(0.5);
+      /* filter: invert(); */
+      flex: 3;
+    }
+
+    ul.gallery li .content {
+      position: absolute;
+      height: 160px;
+      line-height: 1.3em;
+      bottom: -250px;
+      background: #025829;
+      color: #fff;
+      padding: 0px 20px 20px;
+      text-align: center;
+      transition: 0.5s;
+    }
+
+    ul.gallery li .content::before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 70px;
+      background: #025829;
+      transform: rotate(-5deg) scale(1.5);
+      transform-origin: left top;
+      z-index: -1;
+      /* border: 5px solid #f00; */
+    }
+
+    ul.gallery li .content h2 {
+      padding-bottom: 10px;
+    }
+
+    ul.gallery li .content p {
+      padding-bottom: 10px;
+    }
+
+    ul.gallery li .content .sns {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+
+    ul.gallery li .content .sns a {}
+
+    ul.gallery li .content .sns a i {
+      font-size: 24px;
+      margin: 5px;
+    }
+
+    ul.gallery li .content .sns a i:hover {
+      color: coral;
+    }
+
+    .gallery li:hover .content {
+      bottom: 0px;
+      transition-delay: 0.2s;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="gallery">
+    <li>
+      <div class="content">
+        <h2>Company</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellendus dolore minima, consequatur
+          incidunt quod suscipit obcaecati autem cupiditate fugiat id enim fugit facilis dolorem reprehenderit vitae
+          aperiam laborum eaque.</p>
+        <div class="sns">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="content">
+        <h2>Business</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellendus dolore minima, consequatur
+          incidunt quod suscipit obcaecati autem cupiditate fugiat id enim fugit facilis dolorem reprehenderit vitae
+          aperiam laborum eaque.</p>
+        <div class="sns">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="content">
+        <h2>Work</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellendus dolore minima, consequatur
+          incidunt quod suscipit obcaecati autem cupiditate fugiat id enim fugit facilis dolorem reprehenderit vitae
+          aperiam laborum eaque.</p>
+        <div class="sns">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="content">
+        <h2>Product</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellendus dolore minima, consequatur
+          incidunt quod suscipit obcaecati autem cupiditate fugiat id enim fugit facilis dolorem reprehenderit vitae
+          aperiam laborum eaque.</p>
+        <div class="sns">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="content">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta repellendus dolore minima, consequatur
+          incidunt quod suscipit obcaecati autem cupiditate fugiat id enim fugit facilis dolorem reprehenderit vitae
+          aperiam laborum eaque.</p>
+        <div class="sns">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+
+</html>
