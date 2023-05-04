@@ -48,8 +48,10 @@
 
   <pre class="w80 preclass" style="padding-top: 50px;">
     <span class="fbp">★ word-wrap: break-word;  </span>
-        긴 단어를 끊고 다음 줄로 줄 바꿈할 수 있다 (강제개행)
+        긴 단어를 끊고 다음 줄로 줄 바꿈할 수 있다 (강제개행) word-wrap: break-word;  
   </pre>
+
+  <p class="a" style="padding: 20px 0; text-align:center; border:none;"> ★ word-wrap: break-word; (강제개행)</p>
 
   <div class="mt500">
     <p class="a">
@@ -57,10 +59,33 @@
       excepteurvoluptatecupidatatdeseruntconsequatvelitdoloroccaecat. Incididunt sunt do pariatur reprehenderit
       dolor anim
     </p>
+    <p class="a" style="word-wrap: break-word;">
+      Laborum minim ut nisi excepteur sit fugiat. Eiusmod voluptate voluptate velit officia dolor
+      excepteurvoluptatecupidatatdeseruntconsequatvelitdoloroccaecat. Incididunt sunt do pariatur reprehenderit
+      dolor anim
+    </p>
+    <p style="margin-bottom: 30px;"></p>
     <p class="a"> This p contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will
-      not
-      break and wrap to the next line.</p>
+      not break and wrap to the next line.</p>
+
+    <p class="a" style="word-wrap: break-word;"> This p contains a very long word:
+      thisisaveryveryveryveryveryverylongword. The long word will
+      not break and wrap to the next line.</p>
+
+    <p class="a" style="padding: 20px 0; text-align:center; border:none;"> ★ white-space : nowrap 줄바꿈을 하지 않는다. </p>
+    <p class=" a" style="white-space: nowrap;"> This p contains a very long word:
+      thisisaveryveryveryveryveryverylongword. The long word will
+      not break and wrap to the next line.This p contains a very long word:
+      thisisaveryveryveryveryveryverylongword. The long word will
+      not break and wrap to the next line.</p>
   </div>
+
+
+  <pre class="w80 preclass" style="padding-top: 50px;">
+    <span class="fbp">★ 줄바꿈 관련  </span>
+    1. white-space: nowrap;    : 줄바꿈을 하지 않는다.  
+    2. word-wrap: break-word;  : 긴 단어를 끊고 다음 줄로 줄 바꿈할 수 있다 (강제개행)
+  </pre>
 
   <pre class="w80 preclass">
   더미텍스트 만들기 ( lorem ipsum )
