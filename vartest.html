@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>::root - var test</title>
+  <style>
+    :root {
+      --primary: rgb(219, 20, 120);
+      --secondary: coral;
+      --positive: yellowgreen;
+      --negative: mediumorchid;
+    }
+
+    div {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      width: 150px;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+
+    .primary {
+      background: var(--primary);
+    }
+
+    .secondary {
+      background: var(--secondary)
+    }
+
+    .positive {
+      background: var(--positive);
+    }
+
+    .negative {
+      background: var(--negative);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <button class="btn primary">Primary </button>
+    <button class="btn secondary">Secondary </button>
+    <button class="btn positive">Positive </button>
+    <button class="btn negative">Negative </button>
+  </div>
+
+  <div>
+    <img src="http://www.placehold.it/800x1000" alt="이미지">
+  </div>
+
+  <div>
+    <button class="btn primary">Primary </button>
+    <button class="btn secondary">Secondary </button>
+    <button class="btn positive">Positive </button>
+    <button class="btn negative">Negative </button>
+  </div>
+
+  <div>
+    <img src="http://www.placehold.it/800x1000" alt="이미지">
+  </div>
+  <div>
+    <button class="btn primary">Primary </button>
+    <button class="btn secondary">Secondary </button>
+    <button class="btn positive">Positive </button>
+    <button class="btn negative">Negative </button>
+  </div>
+
+
+</body>
+
+</html>

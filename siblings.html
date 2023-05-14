@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1,
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background: orange;
+      margin-bottom: 30px;
+      margin-right: 30px;
+      /* white-space: nowrap; */
+      word-wrap: break-word;
+      float: left;
+    }
+
+    .box1 {}
+
+    .box1 a:focus {
+      background: yellow;
+    }
+
+    .box2 {
+      display: none;
+    }
+
+    .box1:hover+.box2 {
+      display: block;
+      background: red;
+    }
+
+    .num {
+      clear: left;
+      border: 1px solid #f00;
+    }
+
+    .num a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid #f00;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .num a:hover {
+      background: #f00;
+    }
+
+    .num a:focus {
+      background: orange
+    }
+
+    .wrapper {
+      /* display: flex; */
+    }
+
+    .txt {
+      font-size: 30px;
+    }
+
+    .main {
+      height: 200px;
+      background: orchid;
+      float: left;
+      width: calc(100% - 300px);
+
+      width: -webkit-calc(100% - 300px);
+      width: -moz-calc(100% - 300px);
+      width: -o-calc(100% - 300px);
+      width: -ms-calc(100% - 300px);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .side {
+      width: 300px;
+      height: 200px;
+      background: orange;
+      float: left;
+    }
+
+    b {
+      font-size: 100px;
+      border: 1px solid #f00;
+      vertical-align: middle;
+    }
+
+    span {
+      background: crimson;
+      padding: 5px 10px;
+      border-radius: 7px;
+      color: #fff;
+      vertical-align: middle;
+
+    }
+
+    img {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. 형제요소 보이게하기
+  2. ::active, ::focus 보기
+  3. 가변길이 만들기
+  4. vertical-align 연습 -->
+
+
+
+
+  <!-- 1. 형제요소 보이게하기  -->
+
+  <!--   <p class="txt"> 형제요소 보이기</p>
+  <div class="box1">
+    <a href="#"> aaaaaaaaaaaaaaa </a>
+  </div>
+  <div class="box2">bbbbbbbbbbbbbb</div>
+ -->
+
+
+  <!--2.  ::active,  ::focus  보기 -->
+  <!--   <p class="txt">::active ::focus 만들기 </p>
+  <div class="num">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+  </div>
+ -->
+
+  <!-- 3. 가변길이 만들기
+  <p class="txt"> 가변길이 만들기 </p>
+  <div class="wrapper">
+    <div class="main">main</div>
+    <div class="side">side</div>
+  </div> -->
+
+  <!-- 4. vertical-align 연습 -->
+  <!-- <p class="txt"> vertical-align 연습 </p>
+  <b>직원모집</b>
+
+  <img src="images/banner.jpg" alt="">
+  <span>모집중</span>
+ -->
+
+  <style>
+    .container {}
+
+    .container img {
+      float: left;
+      margin-right: 30px;
+    }
+
+    .container p {
+      /* border: 10px solid #f00; */
+      overflow: hidden;
+      /* padding-left: 30px; */
+    }
+  </style>
+
+  <p> overflow:hidden 연습하기</p>
+  <div class="container">
+    <!-- <img src="images/banner.jpg" alt=""> -->
+    <img src="http://placehold.it/250x200" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem saepe sint beatae, dicta modi odit aut
+      animi repellat inventore, non consequatur excepturi accusantium dolorum minima distinctio asperiores impedit ex!
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ab tempora ipsum error eos nulla illo esse,
+      repellat odit nostrum reiciendis cum dolore eveniet expedita fuga nobis ratione vero quia.
+      Laboriosam aperiam facilis voluptates quibusdam minus maiores, at velit incidunt accusantium, alias doloribus eius
+      nisi reprehenderit ex itaque cumque nobis. Laboriosam itaque enim ratione amet, magni repellat maiores
+      perspiciatis dignissimos!
+      Illo consequatur obcaecati qui possimus quibusdam ipsum eos, iusto architecto repellat hic nesciunt. Placeat
+      debitis consequatur doloribus necessitatibus corporis ratione, dolorem dolores autem tenetur sapiente id est amet
+      quibusdam quas!
+      Beatae iste nostrum omnis repellendus, aut molestias maxime pariatur. Eos excepturi natus tempore, omnis quidem
+      ipsam a tenetur doloremque assumenda explicabo itaque neque debitis id exercitationem dolores impedit. Iste, fuga.
+      Excepturi neque libero quidem autem perferendis placeat iure corporis voluptatibus ad perspiciatis quis, dolorem
+      quasi nemo dolorum nesciunt animi, similique eos recusandae mollitia natus. Delectus sequi eligendi vel explicabo
+      provident! </p>
+  </div>
+
+</body>
+
+</html>

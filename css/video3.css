@@ -21,11 +21,11 @@ body {
 .hero {
   position: relative;
   width: 100%;
+  min-width: 980px;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 980px;
   background: linear-gradient(
     rgba(121, 180, 106, 0.3),
     rgba(27, 90, 133, 0.322)
@@ -49,10 +49,10 @@ body {
   display: flex;
 }
 .hero nav ul li {
-  margin: 0 1rem;
 }
 .hero nav ul li a {
-  padding: 1rem;
+  display: block;
+  padding: 0 1.3rem;
   color: #fff;
   transition: 0.5s;
 }
