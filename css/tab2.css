@@ -1,0 +1,139 @@
+@import url("reset11.css");
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background: #aaa;
+}
+
+.slider {
+  width: 100%;
+  height: 300px;
+  background: #bbb;
+}
+
+.content {
+  width: 100%;
+  height: 200px;
+  background: #ccc;
+  /* overflow: hidden; */
+  position: relative;
+}
+.content div {
+}
+
+.content .con1 {
+  width: 500px;
+  height: inherit;
+  background: #1ba5b2;
+  float: left;
+  position: relative;
+}
+
+.content .con1 h2 {
+  margin: 0;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  background: #c88;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  background: rgb(240, 147, 84);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transition: 0.35s;
+}
+.content .con1 h2.r100 {
+  margin-left: 101px;
+  background: rgb(240, 147, 84);
+}
+
+.content .con1 h2.on {
+  background: rgb(128, 55, 7);
+}
+
+.content .con1 ul {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  /* display: none; */
+}
+
+.content .con1 ul.notice {
+}
+
+.content .con1 ul.notice li {
+  line-height: 40px;
+  width: 100%;
+  position: relative;
+}
+.content .con1 ul.notice li a {
+  transition: 0.5s;
+}
+.content .con1 ul.notice li:hover a {
+  color: #18601d;
+}
+.content .con1 ul.notice li a span.day {
+  position: absolute;
+  right: 0;
+}
+
+.content .con1 ul.gallery {
+  padding-top: 15px;
+  display: none;
+}
+.content .con1 ul.gallery li {
+  float: left;
+  margin-right: 15px;
+}
+
+.content .con1 ul.gallery li:last-child {
+  margin-right: 0;
+}
+
+.content .con1 ul.gallery li a {
+}
+.content .con1 ul.gallery li:hover a {
+  filter: invert();
+}
+.content .con1 ul.gallery li a img {
+  width: 146px;
+  object-fit: cover;
+}
+
+/* .con2 */
+.content .con2 {
+  width: 300px;
+  height: inherit;
+  background: #18601d;
+  float: left;
+  position: relative;
+}
+
+.content .con3 {
+  width: 400px;
+  height: inherit;
+  background: #e08105;
+  float: left;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #ddd;
+}
