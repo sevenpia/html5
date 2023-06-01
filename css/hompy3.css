@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard-Regular";
+}
+html {
+  scroll-behavior: smooth;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  border: none;
+  width: inherit;
+  height: inherit;
+}
+body {
+  font-weight: normal;
+  color: #333;
+  font-size: 1.125rem;
+}
+
+/* pretendard */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/* common   */
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* header  */
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+}
+header .inner {
+  height: inherit;
+}
+header .logo {
+  float: left;
+  margin-top: 30px;
+}
+header ul.gnb {
+  padding-top: 30px;
+  float: right;
+  width: 800px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+header ul.gnb > li {
+  display: block;
+  width: 25%;
+  line-height: 40px;
+  float: left;
+  position: relative;
+  background: #42dbd4;
+}
+header ul.gnb > li > a {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: #4b4949;
+}
+
+header ul.gnb > li:hover > a {
+  background: green;
+  color: #fff;
+}
+header ul.gnb li > ul.sub {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background: lightgreen;
+  display: none;
+}
+header ul.sub > li {
+  height: 40px;
+  line-height: 40px;
+}
+header ul.sub > li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #555;
+}
+
+header ul.sub > li:hover > a {
+  background: rgb(79, 151, 6);
+  color: #fff;
+}
+/* content */
+.content {
+  width: 100%;
+  height: 500px;
+  background: azure;
+}
+.content .inner {
+  height: inherit;
+  background: rgb(129, 218, 218);
+  text-align: center;
+  padding-top: 120px;
+}
+
+footer {
+  height: 100px;
+  background: orchid;
+}
+
+footer .inner {
+  height: inherit;
+  background: crimson;
+  text-align: center;
+  padding-top: 40px;
+}
+/* topBtn */
+
+.topbtn {
+  font-size: 34px;
+  font-family: fontawesome;
+  background: orange;
+  border-radius: 7px;
+  padding: 10px 12px;
+  color: #fff;
+  position: fixed;
+  bottom: 30px;
+  right: -100px;
+  transition: 0.4s;
+}
+.topbtn.active {
+  right: 30px;
+}

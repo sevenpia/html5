@@ -1,0 +1,243 @@
+/* 1. 1280이상
+2. 1024-1279 
+3. 768-1023
+4. 480-767
+5. 320-479
+6. 320 이하 */
+
+/* 1024-1279  */
+@media (max-width: 1279px) {
+  header,
+  header .inner {
+    width: 100%;
+    min-width: 1024px;
+  }
+  header ul.gnb {
+    width: 600px;
+  }
+
+  .content,
+  .content .inner {
+    width: 100%;
+    min-width: 1024px;
+  }
+  footer,
+  footer .inner {
+    width: 100%;
+    min-width: 1024px;
+  }
+}
+
+/* 768-1023 */
+@media (max-width: 1023px) {
+  header,
+  header .inner {
+    width: 100%;
+    min-width: 768px;
+  }
+
+  header ul.gnb {
+    width: 450px;
+  }
+
+  .content,
+  .content .inner {
+    width: 100%;
+    min-width: 768px;
+  }
+  footer,
+  footer .inner {
+    width: 100%;
+    min-width: 768px;
+  }
+}
+
+/* 480-767 */
+@media (max-width: 767px) {
+  /* 모바일메뉴등장 */
+  header {
+    position: fixed;
+  }
+
+  header,
+  header .inner {
+    width: 100%;
+    min-width: 480px;
+    position: fixed;
+  }
+  header.active {
+    background: rgba(255, 255, 255, 0.68);
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  header ul.gnb {
+    position: fixed;
+    width: 200px;
+    /* width: calc(100% - 50%); */
+    height: 100vh;
+    min-width: 200px;
+    background: rgb(199, 238, 243);
+    margin-top: 0;
+    padding-top: 100px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.294);
+    transition: 0.4s;
+    right: -60%;
+  }
+  header ul.gnb.active {
+    transition: 0.4s;
+    right: 0px;
+  }
+
+  header ul.gnb > li {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  header ul.gnb > li a {
+    display: block;
+  }
+
+  header ul.gnb > li:hover > a {
+    font-weight: bold;
+  }
+
+  header ul.gnb > li ul.sub {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+
+  header ul.gnb > li ul.sub li {
+    width: 100%;
+    color: #666;
+  }
+
+  header ul.gnb > li ul.sub li a {
+    display: block;
+  }
+  header ul.gnb > li ul.sub li:hover {
+    background: #c55;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .icon {
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+  }
+
+  .icon .trigger {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background: #000;
+    z-index: 3;
+    transition: 0.4s;
+  }
+  .icon .trigger.active {
+    background: rgba(0, 0, 0, 0);
+  }
+  .icon .trigger::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background: #000;
+    transition: 0.4s;
+  }
+
+  .icon .trigger.active::before {
+    opacity: 1;
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .icon .trigger::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background: #000;
+    transition: 0.4s;
+  }
+
+  .icon .trigger.active::after {
+    opacity: 1;
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  /* content  */
+  .content,
+  .content .inner {
+    width: 100%;
+    min-width: 480px;
+  }
+  footer,
+  footer .inner {
+    width: 100%;
+    min-width: 480px;
+  }
+}
+
+/* 320-479 */
+
+@media (max-width: 479px) {
+  header,
+  header .inner {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  header ul.gnb {
+    width: 100%;
+    right: -500px;
+  }
+
+  .content,
+  .content .inner {
+    width: 100%;
+    min-width: 320px;
+  }
+  footer,
+  footer .inner {
+    width: 100%;
+    min-width: 320px;
+  }
+}
+/* 320 이하 */
+@media (max-width: 320px) {
+  header,
+  header .inner {
+    width: 100%;
+    min-width: 280px;
+  }
+
+  .content,
+  .content .inner {
+    width: 100%;
+    min-width: 280px;
+  }
+  footer,
+  footer .inner {
+    width: 100%;
+    min-width: 280px;
+  }
+}

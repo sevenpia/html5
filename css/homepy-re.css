@@ -1,0 +1,315 @@
+/* ********************************* */
+/*         responsive setting        */
+/* ********************************* */
+
+/* 
+1. 1280 이상 
+2. 1024~1279  (max-width: 1279px)
+3. 768-1023   (max-width: 1023px)
+4. 480-767    (max-width: 767px)
+5. 320-479    (max-width: 479px)
+*/
+
+/* 2. 1024~1279  (max-width: 1279px) */
+@media (max-width: 1279px) {
+  section {
+    padding: 50px;
+  }
+
+  section.banner .cententBx {
+    padding: 150px 50px 0px 50px;
+    border: 1px solid #ff00;
+  }
+
+  section.banner .cententBx .welcome {
+    margin-top: 80px;
+    border: 1px solid #000;
+    width: 100%;
+  }
+
+  section.banner .cententBx h5.logoText {
+    left: 50px;
+  }
+
+  section.banner .cententBx div h2 {
+    font-size: 2.8rem;
+  }
+
+  section.banner .cententBx div p {
+    line-height: 2rem;
+    margin-top: 50px;
+  }
+
+  .sci {
+    left: 50px;
+    justify-content: flex-start;
+  }
+
+  .sci ul {
+    display: flex;
+  }
+  .sci ul li {
+    /* padding: 0px; */
+  }
+  .sci ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0.5;
+  }
+
+  .sci ul li:hover a {
+    /* color: aqua; */
+    opacity: 1;
+  }
+
+  .sci ul li a i.fa-brands {
+    font-size: 36px;
+  }
+
+  .title h2 {
+    font-weight: 500;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .content .textBx {
+    width: 100%;
+    min-width: 100%;
+    line-height: 2rem;
+    /* border: 10px solid #f00; */
+  }
+
+  .content .imgBx {
+    margin: 50px 0;
+  }
+
+  .contact .contactForm{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  section.banner .cententBx .welcome {
+    margin-top: 0px;
+    border: 1px solid #f00;
+    width: 100%;
+    padding: 0px 20px 0;
+  }
+
+  section.banner .imgSidebx {
+    width: 35%;
+  }
+  section.banner .cententBx {
+    width: 65%;
+  }
+
+  .about .content11{
+    display: block;
+  }
+
+  .textBx11 {
+    width: 100%;
+    min-width: 100%;
+}
+.imgBx11 {
+  margin-left: 0px;
+  margin-top: 30px;
+  
+}
+
+
+
+
+/* product */
+  .productBx {
+    width: 50%;
+  }
+  .workBx{
+    width: 50%;
+  }
+
+  .sidebar {
+    width: calc(100% - 35%);
+  }
+}
+
+@media (max-width: 767px) {
+  /* 
+  480~767 구간..   
+  모바일이 등장한다. 분기점이 된다.  
+  */
+
+  .cententBx {
+    position: relative;
+  }
+  section.banner .imgSidebx {
+    display: none;
+  }
+  section.banner .cententBx {
+    width: 100%;
+    height: inherit;
+    padding: 150px 20px 0px 20px
+  }
+  
+  section.banner .cententBx .welcome {
+    border: 1px solid #00f;
+    width: 100%;
+    padding: 0;
+    height: 80vh;
+  }
+
+  section.banner .cententBx .welcome {
+    margin-top: 20px;
+  }
+
+  .sci {
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+  }
+
+  section {
+    padding: 15px;
+  }
+  .title p {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .productBx {
+    width: 100%;
+  }
+  .product-group {
+    width: 100%;
+  }
+
+  .workBx{
+    width: 100%;    
+  }
+  .work-group {
+    width: 100%;    
+  }
+
+  .work-group img{    
+    height: 200px; 
+    object-position: top;
+  }
+  /* contact */
+  .contact .contactForm .row{
+    display: block;
+    width: 100%;
+  }
+  .contact .contactForm .row .col50 {
+    width: 100%;
+  }
+  .contact .contactForm .row .col100{
+    width: 100%;
+    text-align: left;
+  }
+  .contact .contactForm .row input, 
+  .contact .contactForm .row textarea{
+    width: 97%;  
+  }
+
+  .contact .contactForm .row .col100.submit{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+
+  .banner{
+    width: 100%;
+  }
+
+  section.banner .cententBx .welcome {
+    margin-top: 30px;
+    border: 5px solid #ff0;
+    width: 100%;
+  }
+  section#home{
+    height: 100vh;
+  }
+
+  section.banner .cententBx div h4{
+    font-size: 1.1rem;
+  }
+  
+  section.banner .cententBx div p {
+    line-height: 1.3rem;
+  }
+
+  section.banner .cententBx {
+    padding: 80px 15px 0px 15px;
+}
+section.banner .cententBx h5.logoText{
+  left: 15px;
+}
+
+.sci {
+  left: 15px;
+  bottom: 10px;
+}
+.contact .contactForm .row .col50{
+  margin: 0;
+  margin-bottom: 10px;
+}
+.contact .contactForm .row .col100{
+  margin: 0;
+  margin-top: 10px;
+}
+
+.toggle{
+  width: 55px;
+  height: 55px;
+}
+
+@media (max-width: 320px) {
+  section.banner .cententBx .welcome {
+    margin-top: 30px;
+    width: 100%;
+    border: 5px solid pink;
+  }
+  section.banner .cententBx h5.logoText{
+    top: 20px;
+  }
+  .toggle{
+    top: 20px;
+  }
+  section.banner .cententBx{
+    padding: 10px 15px 0px 15px;
+  }
+  section.banner .cententBx div h2 {
+    font-size: 1.5rem;
+}
+section.banner .cententBx div h4{
+  font-size: 1rem;
+}
+
+section.banner .cententBx div h4:first-child{
+  display: none;
+}
+
+section.banner .cententBx div p {
+  line-height: 1.3rem;
+  margin-top:10px;
+  height: 180px;
+  /* white-space: nowrap;    */
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.sci {
+  bottom: 0px;
+}
+section{
+  height: 100%;
+}
+
+}

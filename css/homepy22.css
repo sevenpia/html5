@@ -3,6 +3,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+::selection {
+  background: darkorchid;
+  color: #fff;
+}
 body {
 }
 .toggle {
@@ -109,8 +114,8 @@ section.banner .cententBx {
   width: calc(100% - 500px);
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   padding: 100px;
 }
 section.banner .cententBx h5.logoText {
@@ -124,11 +129,15 @@ section.banner .cententBx h5.logoText {
   padding: 0px 10px;
   letter-spacing: 0px;
 }
-
+section.banner .cententBx h5.logoText a {
+  color: #fff;
+}
 section.banner .cententBx h5.logoText:hover {
   background: #666;
+  color: #fff;
 }
-section.banner .cententBx div {
+section.banner .cententBx .welcome {
+  margin-top: 80px;
 }
 section.banner .cententBx div h4 {
   font-size: 1.5em;
@@ -211,33 +220,33 @@ section.banner .cententBx div p {
 .title {
   width: 100%;
   text-align: center;
-  font-weight: 900;
+  font-weight: 700;
 }
 .title h2 {
   position: relative;
   color: #333;
   font-size: 2rem;
   letter-spacing: -2px;
-  color: aqua;
-  margin: 30px 0;
-  font-weight: 900;
-  /* text-shadow: 2px 2px 5px #272727; */
+  margin: 30px 0 50px;
+  font-weight: 700;
+  color: #000;
 }
-
 .title h2::before {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
-  /* bottom: 0; */
   width: 60px;
   height: 4px;
-  background: #333;
+  background: linear-gradient(to right, rgb(90, 200, 228), rgb(7, 192, 69));
 }
+
 .title p {
   width: 700px;
   display: inline-block;
+  font-weight: 500;
+  color: #000;
 }
 
 .title.white h2,
@@ -245,136 +254,140 @@ section.banner .cententBx div p {
   color: #fff;
 }
 
-.title.white h2::before {
-  background: #fff;
+.about {
+  position: relative;
+}
+.about .content11 {
+  display: flex;
+  margin-top: 60px;
 }
 
-.content {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-}
-.content .textBx {
+.textBx11 {
   width: 49%;
   min-width: 49%;
   line-height: 2rem;
-  /* border: 10px solid #f00; */
 }
-.content .textBx p {
+.textBx11 p {
   color: #fff;
+  z-index: 10;
+  z-index: 9999;
 }
-.content .imgBx {
+.imgBx11 {
   margin-left: 40px;
+  display: flex;
 }
-.content .imgBx img {
-  max-width: 100%;
+.imgBx11 img {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
   /* height: auto; */
 }
 
-/* service */
+.content2 {
+  /* display: flex;
+  justify-content: space-around; */
+  margin-top: 60px;
+}
 
-.services {
+/* product */
+.product {
+  width: 100%;
+  overflow: hidden;
 }
-.services .content {
-  margin: 10px auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.services .content .servicesBx {
-  padding: 26px 75px;
-  max-width: 494px;
-  margin: 0px;
-  margin: 23px;
+.productBx {
+  width: 33.3%;
+  float: left;
   text-align: center;
+  margin: 0 auto 20px;
+}
+.product-group {
+  width: 95%;
+  margin: 0 auto;
   background: #eee;
-  transition: 0.5s;
+  padding-bottom: 30px;
+  transition: 0.4s;
+  /* background: #f00; */
+}
+.product-group:hover {
+  filter: invert();
+}
+.productBx img {
+  width: 80%;
+  margin: 20px;
+}
+.productBx h2 {
+  font-size: 2rem;
+}
+.productBx p {
+  width: 80%;
+  margin: 20px auto 0;
 }
 
-.services .content .servicesBx:hover {
-  background: #000;
-}
-.services .content .servicesBx img {
-  max-width: 100%;
-  transition: 0.5s;
-  width: 200px;
-  height: auto;
-}
-
-.services .content .servicesBx:hover img {
-  filter: invert(1);
-  /* filter: grayscale(1); */
-}
-.services .content .servicesBx h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  transition: 0.5s;
-}
-
-.services .content .servicesBx:hover h2 {
-  color: #fff;
-}
-.services .content .servicesBx p {
-  margin: 0;
-  transition: 0.5s;
-}
-.services .content .servicesBx:hover p {
-  color: #fff;
-}
-
+/* work */
 .work {
+  width: 100%;
+  overflow: hidden;
 }
-.work .content {
-  margin: 10px 10px;
-  flex-direction: row;
-  flex-wrap: wrap;
+.content2 {
+  width: 100%;
 }
-.work .content .workBx {
-  position: relative;
-  width: 385px;
-  height: 350px;
-  margin: 17px;
+.workBx {
+  /* display: inline-block; */
+  width: 33.3%;
+  float: left;
   text-align: center;
-  transition: 0.5s;
+  margin: 0 auto;
 }
-.work .content .workBx .imgBx,
-.work .content .workBx .textBx {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.work-group {
+  width: 95%;
+  height: inherit;
+  margin: 0 auto 20px;
+  background: #eee;
+  position: relative;
 }
 
-.work .content .workBx .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.work-group img {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
+  object-position: top;
 }
 
-.work .content .workBx .textBx {
+.textBx {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
   background: #000;
   opacity: 0;
-  transition: 0.5s;
-}
-.work .content .workBx .textBx:hover {
-  opacity: 0.85;
+  transition: 0.4s;
 }
 
-.work .content .workBx .textBx h3 {
+.textBx h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   text-transform: uppercase;
 }
+.workBx h2 {
+  font-size: 2rem;
+}
+.workBx p {
+  width: 80%;
+  margin: 20px auto 0;
+}
 
+.work-group:hover .textBx {
+  opacity: 0.8;
+}
+
+/* contact */
 .contact {
   background: #000;
   display: flex;
@@ -385,7 +398,7 @@ section.banner .cententBx div p {
 .contact .contactForm {
   position: relative;
   width: 1100px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .contact .contactForm .row {
@@ -407,6 +420,7 @@ section.banner .cententBx div p {
   font-size: 1rem;
   resize: none;
 }
+
 .contact .contactForm .row .col100 {
   width: 100%;
   margin: 10px;
@@ -485,7 +499,7 @@ footer .copyright p {
   bottom: 30px;
   background: #666;
   color: #fff;
-  padding: 20px;
+  padding: 13px 15px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
@@ -501,6 +515,9 @@ footer .copyright p {
   right: 30px;
 }
 
+.topBtn i {
+  font-size: 26px;
+}
 /* .bottomBtn {
   position: fixed;
   background: #666;
@@ -515,228 +532,3 @@ footer .copyright p {
   right: 30px;
 }
  */
-
-/* ********************************* */
-/*         responsive setting        */
-/* ********************************* */
-
-/* 677 이하 */
-@media (max-width: 677px) {
-  .title p {
-    width: 100%;
-  }
-  section.banner .cententBx div p {
-    line-height: 1rem;
-  }
-
-  section.banner {
-    width: 100%;
-    border: 10px solid #00f;
-  }
-
-  .banner .imgSidebx {
-    display: none;
-  }
-
-  section.banner .cententBx,
-  .sidebar {
-    width: 100%;
-    padding: 40px;
-  }
-
-  section.banner .cententBx div p {
-    width: 100%;
-  }
-
-  section.banner .cententBx h5.logoText {
-    left: 40px;
-  }
-
-  .sci {
-    left: 40px;
-  }
-
-  section {
-    padding: 40px;
-  }
-
-  section.about {
-    width: 100%;
-  }
-  section.about .content {
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  .content .textBx {
-    width: 100%;
-    min-width: 100%;
-    line-height: 2rem;
-  }
-
-  .content .imgBx {
-    margin-left: 0px;
-  }
-
-  .services .content .servicesBx {
-    padding: 28px 60px;
-    max-width: 578px;
-    margin: 13px;
-    width: 100%;
-  }
-
-  .work .content .workBx {
-    width: 100%;
-  }
-
-  .contact .contactForm {
-    width: 100%;
-  }
-  .contact .contactForm .row {
-  }
-
-  .contactForm .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .contact .contactForm .row .col50 {
-    width: 100%;
-  }
-
-  .contact .contactForm .row .col100 {
-    width: 100%;
-  }
-
-  .sidebar ul.menu li a {
-    font-size: 2.4rem;
-  }
-}
-
-/* 678이상 800 이하  */
-@media (min-width: 678px) and (max-width: 800px) {
-  section.banner .imgSidebx {
-    display: none;
-  }
-  section.banner .cententBx {
-    width: 100%;
-  }
-  .content {
-    display: block;
-  }
-  .content .textBx {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  .content .imgBx {
-    margin-left: 0;
-    margin-top: 30px;
-  }
-  .title p {
-    width: 100%;
-  }
-  .services .content .servicesBx {
-    padding: 26px 66px;
-    max-width: 576px;
-    margin: 13px;
-  }
-
-  .work .content .workBx {
-    width: 100%;
-  }
-
-  .contact .contactForm {
-    width: 100%;
-  }
-}
-
-/* 801이상 1000 이하  */
-@media (min-width: 801px) and (max-width: 1000px) {
-  section.banner .imgSidebx {
-    display: none;
-  }
-  section.banner .cententBx {
-    width: 100%;
-  }
-  .about .content {
-    display: block;
-  }
-  .content .textBx {
-    width: 100%;
-  }
-  .content .imgBx {
-    margin-top: 30px;
-    margin-left: 0;
-  }
-
-  .services .content .servicesBx {
-    padding: 26px 13px;
-    max-width: 276px;
-    margin: 0px;
-    margin: 12px;
-  }
-  .work .content .workBx {
-    width: 250px;
-  }
-
-  .contact .contactForm {
-    width: 100%;
-  }
-}
-
-/* 1001이상 1279 이하  */
-
-@media (min-width: 1001px) and (max-width: 1279px) {
-  .services .content .servicesBx {
-    padding: 26px 13px;
-    max-width: 346px;
-    margin: 0px;
-    margin: 12px;
-  }
-  .work .content .workBx {
-    width: 246px;
-    margin: 5px;
-  }
-  section.banner .cententBx div p {
-    line-height: 1.5rem;
-  }
-
-  .about .content {
-    display: block;
-  }
-  .content .textBx {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  .content .imgBx {
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-}
-
-/* 1280픽셀 이상 */
-@media (min-width: 1280px) {
-  .content .imgBx {
-    vertical-align: middle;
-  }
-  .content .textBx p {
-    height: 295px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 2rem;
-  }
-
-  .work .content {
-    width: 80%;
-    display: block;
-    overflow: hidden;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .work .content .workBx {
-    display: inline-block;
-  }
-}

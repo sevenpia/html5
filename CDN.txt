@@ -1,20 +1,168 @@
 <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+<!-- Slick Slider -->
+<link rel="stylesheet" href="js/slick/slick-theme.css">
+<link rel="stylesheet" href="js/slick/slick.css">
+<script src="js/slick/slick.min.js"></script>
+
+<!-- TypeIt -->
+<script src="js/typeit.min.js"></script>
+
+<!-- Wow Scroll Reveal Animation -->
+<script src="js/wow.min.js"></script>
+
+
 /* Google Web Fonts CDN */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
-font-family: 'Noto Sans KR', sans-serif;
+/* font-family: 'Noto Sans KR', sans-serif */
+
+/* noto-sans 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+/*font-family: 'Noto Sans KR', sans-serif; */
 
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-font-family: 'Raleway', sans-serif;
+/*font-family: 'Raleway', sans-serif; */
 
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
-font-family: 'Montserrat', sans-serif;
+/*font-family: 'Montserrat', sans-serif;*/
 
-/* Fontawesome 4.7 */
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* comfortaa 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap');
+/*font-family: 'Comfortaa', cursive; */
+
+
+<!--  comfortaa 폰트 --> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+/* Web Fonts - Source Sans Pro */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+
+/* NEXON */
+@font-face {
+  font-family: "NEXON Lv2 Gothic";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* GmarketSansMedium */
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* pretendard */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+========================================================
+
+
+[참고] 제작에 사용된 CSS 및 JS 코드
+
+▼ 제작에 사용된 JS 코드 설명
+
+/* Slick Slider - Welcome */
+$('.slideshow').slick({
+	infinite: true, // 무한반복
+	dots: false, // 동그라미 네비게이션 사용안함
+	autoplay: true, // 자동 재생
+	autoplaySpeed: 2000, // 자동 재생 시 머무는 시간
+	fade: true, // 크로스 페이드 트랜지션
+	speed: 1000, // 자동 재생 트랜지션 시간
+	pauseOnHover: false // 마우스 오버될 때 멈춤 사용안함
+});
+
+/* TypeIt - Welcome */
+$('#typing').typeIt({
+	strings: ["Business strategy.", "Innovation Plan.", "Creative Idea."], // 타이핑 텍스트 입력
+	speed: 100, // 알파벳 타이핑 속도
+	autoStart: true, // 자동 재생 사용
+	breakLines: false, // 줄 바꿈 사용안함
+	loop:true
+});
+
+
+/* Wow Scroll Reveal Animation */
+  wow = new WOW({
+    boxClass: 'wow',
+    offset: 150,
+    mobile: true
+  })
+  wow.init()
+
+
+
+=========================================
+▼ 제작에 사용된 CSS 코드 설명
+=========================================
+▼ 16:9 Video Ratio
+1920x1080, 1280x720, 900x506, 800x450 700x394
+
+
+
+/* Fontawesome 4.7.0 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* 폰트어썸 link  6.4.0 */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+<!--  폰트어썸 link 6.4.0 --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 /* XEION CDN */
-@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+
+
+
+
+모바일 트리거 유니코드 ( xeicon  유니코드 )
+bars : \e91c
+close : \e921
+
+
+폰트어썸 유니코드
+bars :  \f0c9
+close : \f00d
+
+위로올라가기 폰트어썸
+<i class="fa-sharp fa-light fa-chevron-up fa-beat-fade"></i>
+<i class="fa-sharp fa-light fa-chevron-up"></i>
+
+
+ Top 버튼 : 위로올라가기 (XEicon )
+ <i class="xi-angle-up"></i>
+
+
+구글폰트사용하기 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons")
+
+
+menu: \e5d2
+close : \e5cd
+
+

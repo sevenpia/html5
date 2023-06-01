@@ -82,10 +82,43 @@ footer p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 20px;
   border: 0;
   cursor: pointer;
   border-radius: 7px;
-  background: #f86024;
+  background: linear-gradient(to bottom, #f86024, #0aa8d8);
   display: none;
+  padding: 12px 15px;
+}
+.topBtn i {
+  font-family: fontawesome;
+  font-size: 34px;
+  color: #fff;
+}
+
+.Btn2 {
+  position: fixed;
+  top: 150px;
+  left: 30px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 7px;
+  /* background: lightskyblue; */
+  padding: 12px 15px;
+}
+.Btn2 i {
+  font-family: fontawesome;
+  font-size: 34px;
+  color: #fff;
+}
+
+p.test {
+  position: relative;
+}
+p.test::after {
+  content: "\e4b5";
+  position: absolute;
+  bottom: 600px;
+  left: 15%;
+  font-family: fontawesome;
+  font-size: 2rem;
 }
