@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  border: none;
+  display: block;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  color: #333;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  background: azure;
+  height: 600px;
+}
+
+section:nth-child(2) {
+  background: burlywood;
+}
+section:nth-child(3) {
+  background: deepskyblue;
+}
+.inner {
+  width: 1280px;
+  height: 600px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+.gobtn {
+  position: fixed;
+  display: block;
+  right: 15px;
+  bottom: 15px;
+  writing-mode: vertical-rl;
+  border: 1px solid #000;
+  border-color: rgba(0, 255, 255, 1);
+  border-radius: 10px;
+  padding: 20px 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: blueviolet;
+  display: none;
+}
+
+.gobtn i {
+  font-family: fontawesome;
+  font-size: 24px;
+}
+
+/* 반응형 */
+
+/* 1. 1280이상
+2. 1024-1279
+3. 768-1023
+4. 480-767
+5. 320-479
+6. 320 미만 */
+
+/* 1024-1279 */
+@media screen and (max-width: 1279px) {
+  .inner {
+    width: 100%;
+    min-width: 1024px;
+  }
+
+  section:nth-child(1) {
+    background: aqua;
+  }
+}
+/* 768-1024 */
+@media screen and (max-width: 1023px) {
+  .inner {
+    width: 100%;
+    min-width: 768px;
+  }
+
+  section:nth-child(1) {
+    background: rebeccapurple;
+  }
+}
+/* 480-768 */
+@media screen and (max-width: 767px) {
+  .inner {
+    width: 100%;
+    min-width: 480px;
+  }
+
+  section:nth-child(1) {
+    background: chartreuse;
+  }
+}
+/* 320-479 */
+@media screen and (max-width: 479px) {
+  .inner {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  section:nth-child(1) {
+    background: darkgreen;
+  }
+}
+/* 320 미민 */
+@media screen and (max-width: 319px) {
+  .inner {
+    width: 100%;
+    min-width: 280px;
+  }
+
+  section:nth-child(1) {
+    background: goldenrod;
+  }
+}

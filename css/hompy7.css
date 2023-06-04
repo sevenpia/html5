@@ -1,0 +1,557 @@
+@charset "utf-8";
+/* GmarketSansMedium */
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "GmarketSansMedium";
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+body {
+  font-weight: normal;
+  color: #333;
+  font-size: 1.125rem;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+}
+header {
+  width: 100%;
+  height: 100px;
+  text-transform: uppercase;
+  position: fixed;
+  background: rgba(240, 255, 255, 0.73);
+  z-index: 2;
+}
+header .inner {
+  width: 1280px;
+  margin: 0 auto;
+  /* border: 10px solid #000; */
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  padding-top: 30px;
+}
+
+ul.gnb {
+  float: right;
+  padding-top: 25px;
+}
+ul.gnb li {
+  float: left;
+  text-align: center;
+}
+ul.gnb li a {
+  display: block;
+  padding: 10px 20px;
+  color: #000;
+}
+ul.gnb li:hover a {
+  color: aquamarine;
+}
+
+section {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0px 0 80px;
+}
+
+section#product {
+  padding-top: 110px;
+}
+.headline {
+  text-align: center;
+  padding: 60px;
+}
+.headline h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.headline h2::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(to right, aqua, blue);
+}
+.headline p {
+  padding-top: 60px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1280px;
+  text-align: center;
+}
+.photo {
+  width: 30%;
+  margin: 21px;
+  padding: 15px;
+  background: #e5e5e5;
+  transition: 0.35s;
+  /* box-shadow: 0 0 10px rgba(170, 12, 12, 0.719) !important; */
+}
+.photo:hover {
+  filter: invert();
+}
+.photo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+.photo h3 {
+  text-transform: uppercase;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.photo p {
+  font-size: 1.125rem;
+}
+
+/* faq */
+.faq {
+  overflow: hidden;
+  min-height: 750px;
+}
+.faq > div {
+  width: 50%;
+  float: left;
+  padding: 15px;
+}
+.content-left {
+}
+
+.faq-item {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 10px;
+}
+h3.faq-title {
+  padding: 5px;
+  border-radius: 7px;
+  color: cornflowerblue;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+h3.faq-title::after {
+  content: "\f077";
+  position: absolute;
+  right: 0;
+  font-family: fontawesome;
+  font-size: 24px;
+  transform: rotate(90deg);
+  transition: 0.35s;
+}
+
+.faq-item.active {
+  border: 2px solid cornflowerblue;
+}
+.faq-item.active .faq-title::after {
+  transform: rotate(180deg);
+}
+
+.faq-desc {
+  padding-top: 25px;
+  display: none;
+}
+
+.content-right {
+}
+.img-group {
+  position: relative;
+}
+.img-group::after {
+  content: "10. 25. 2023";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 55px;
+  background: #000;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+.img-group img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.txt-group {
+  margin-top: 45px;
+  text-align: center;
+}
+.txt-group h2 {
+  color: darkorange;
+  font-size: 1.8rem;
+}
+.txt-group p {
+  padding: 25px 50px 0;
+  text-align: center;
+}
+.txt-btn {
+  display: block;
+  border: 1px solid #000;
+  width: 200px;
+  padding: 7px;
+  text-align: center;
+  margin: 25px auto 0;
+  border-radius: 7px;
+}
+.txt-btn:hover {
+  background: crimson;
+  color: #fff;
+  border: transparent;
+}
+
+/* etc  */
+.gotop {
+  position: fixed;
+  right: 0px;
+  bottom: 10px;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  background: rgba(238, 238, 238, 0.588);
+  color: #000;
+  border-radius: 7px;
+  display: none;
+}
+
+.gotop i {
+  font-family: fontawesome;
+  font-size: 24px;
+}
+
+/* 키프레임 애니메이션 */
+.utd {
+  animation: utd 0.4s linear both;
+}
+.utd2 {
+  animation: utd2 0.4s linear both;
+}
+
+@keyframes utd {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes utd2 {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.ltr {
+  animation: ltr 0.4s linear both;
+}
+.rtl {
+  animation: rtl 0.4s linear both;
+}
+
+@keyframes ltr {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes rtl {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* 반응형 */
+/* 
+1280 이상
+880 -1279 (880 -1279)
+480-879   (480-879)
+320-479   (320-479)
+320 미만  (280~319)
+ */
+@media (max-width: 1279px) {
+  ul.gnb {
+    margin-right: 400px;
+  }
+  section {
+    width: 100%;
+    min-width: 880px;
+  }
+
+  section#product {
+  }
+  .content {
+    width: 100%;
+    min-width: 880px;
+  }
+
+  .photo {
+    width: 30%;
+    margin: 12px;
+  }
+
+  h3.faq-title,
+  .faq-desc {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 879px) {
+  /* 모바일메뉴 등장 */
+
+  header {
+    width: 100%;
+  }
+  header .inner {
+    width: 100%;
+  }
+
+  ul.gnb {
+    margin-right: 400px;
+  }
+
+  .trigger {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    /* background: hotpink; */
+    right: 20px;
+    top: 30px;
+    cursor: pointer;
+  }
+  .trigger span {
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #000;
+    transition: 0.35s;
+  }
+  .trigger span::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #000;
+    transition: 0.35s;
+  }
+  .trigger span::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #000;
+    transition: 0.35s;
+  }
+
+  .trigger.active span {
+    background: rgba(0, 0, 0, 0);
+  }
+  .trigger.active span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .trigger.active span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  ul.gnb {
+    float: none;
+    margin-right: 0px;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 100px;
+    background: #fff;
+    box-shadow: -10px 0 5px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    margin-right: -220px;
+    transition: 0.4s;
+  }
+
+  ul.gnb.active {
+    margin-right: 0;
+  }
+
+  ul.gnb li {
+    float: none;
+  }
+
+  ul.gnb li a {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  section#product {
+  }
+  section {
+    width: 100%;
+    min-width: 480px;
+  }
+
+  .headline {
+    padding: 30px 20px;
+  }
+
+  .headline p {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    min-width: 480px;
+  }
+
+  .photo {
+    width: 43%;
+    margin: 15px;
+  }
+  .photo img {
+    height: 150px;
+  }
+
+  #faq {
+    padding-top: 110px;
+  }
+  .faq > div {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 479px) {
+  section#product {
+  }
+
+  ul.gnb {
+    width: 100%;
+    margin-right: -120%;
+  }
+  section {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  .content {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  .headline h2 {
+    font-size: 1.4rem;
+  }
+
+  .headline p {
+    font-size: 1rem;
+  }
+  .photo {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .photo img {
+  }
+
+  .faq-title,
+  .faq-desc {
+    font-size: 0.95rem;
+  }
+
+  .img-group img {
+    height: 220px;
+  }
+  .txt-group h2 {
+    font-size: 1.2rem;
+  }
+  .txt-group p {
+    padding: 15px 0px;
+  }
+
+  .img-group::after {
+    padding: 10px 15px;
+  }
+
+  .gotop {
+    font-size: 0.7rem;
+  }
+  .gotop i {
+    font-size: 20px;
+  }
+}
